@@ -1,0 +1,8 @@
+/////////DATOS TABLA CARGO///////////////////////////////////////////////////////////////////////////////////////////
+insert into Cargo(Id_Cargo,Nombre_Cargo,Descripcion)
+	values(1,'Administracion','Encargado de administra empleado e insumos');
+insert into Cargo(Id_Cargo,Nombre_Cargo,Descripcion)
+	values(2,'Chef','utiliza los insumos en Productos');
+insert into Cargo(Id_Cargo,Nombre_Cargo,Descripcion)
+	values(3,'Mesero','Encargado factura y mesa');
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
