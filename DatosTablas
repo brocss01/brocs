@@ -6,3 +6,21 @@ insert into Cargo(Id_Cargo,Nombre_Cargo,Descripcion)
 insert into Cargo(Id_Cargo,Nombre_Cargo,Descripcion)
 	values(3,'Mesero','Encargado factura y mesa');
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/////////DATOS TABLA CLIENTE///////////////////////////////////////////////////////////////////////////////////////////
+insert into cliente(Id_cliente,Nombre_cliente,Apellidos_cliente,
+	Fecha_Nacimiento,Telefono,Genero,Direccion) values(99061800642,
+	'Sebastian','Garzon','1999/06/18',3142337375,'M','Diagonal 14#20-12');
+
+insert into cliente(Id_cliente,Nombre_cliente,Apellidos_cliente,
+	Fecha_Nacimiento,Telefono,Genero,Direccion) values(1075688998,'Juan Carlos',
+	'Robayo Perez','1980/11/23',3123451254,'M','CRA 7A 45-12');
+
+insert into cliente(Id_cliente,Nombre_cliente,Apellidos_cliente,
+	Fecha_Nacimiento,Telefono,Genero,Direccion) values(1789654342,'Maria Camila',
+	'Suarez Gomez','1995/01/10',3152435612,'F','Cra 1B #78-01');
+
+insert into cliente(Id_cliente,Nombre_cliente,Apellidos_cliente,
+	Fecha_Nacimiento,Telefono,Genero,Direccion) values(112657542,'Karen',
+	'Castro Ortiz','1983/09/16',3015674523,'F','Calle 8 12-89');
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
