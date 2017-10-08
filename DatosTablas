@@ -102,26 +102,26 @@ insert into Pedido(Id_pedido,Id_cliente,Numero_pedido,Descripcion)
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 ///// DATOS TABLA INSUMOS///////////////////////////////////////////////////////////////////////////////////////////////
-insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo);
+insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo)
 values(1,'gaseosa',400,1100);
 
 
-insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo);
+insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo)
 values(2,'arroz', 50, 2900);
 
-insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo);
+insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo)
 values(3,'sal', 50, 1000);
 
-insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo);
+insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo)
 values(4, 'ternera', 100,14300);
 
-insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo);
+insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo)
 values(5,'cerveza',100,1500);
 
-insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo);
+insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo)
 values(6, 'huevo',120,300);
 
-insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo);
+insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo)
 values(7, 'salchichas', 300,1000);
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
