@@ -150,6 +150,10 @@ values(05,1,4,'Hamburguesa',3000,'pan, carne, jamon, queso',4,1,'2017/11/01');
 insert into Producto(Id_producto ,Id_Restaurante ,Id_tipo_producto ,Nombre_producto,
 Precio ,Descripcion ,Unidades_stock ,Unidades_Vendidas ,Fecha_Caducidad )
 values(06,1,3,'Helado',2500,'Postre frio',10,2,'2017/10/27');
+
+insert into Producto(Id_producto ,Id_Restaurante ,Id_tipo_producto ,Nombre_producto,
+Precio ,Descripcion ,Unidades_stock ,Unidades_Vendidas ,Fecha_Caducidad )
+values(07,1,4,'Hot Dog',5500,'Comida Rapida',17,1,'2017/10/17');
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 ///// DATOS TABLA Producto_Pedido///////////////////////////////////////////////////////////////////////////////////////////////
@@ -164,6 +168,8 @@ insert into Producto_Pedido(Id_pedido,Id_producto,cantidad) values(02,04,5);
 insert into Producto_Pedido(Id_pedido,Id_producto,cantidad) values(02,02,2);
 
 insert into Producto_Pedido(Id_pedido,Id_producto,cantidad) values(02,05,3);
+
+insert into Producto_Pedido(Id_pedido,Id_producto,cantidad) values(02,07,7);
 
 insert into Producto_Pedido(Id_pedido,Id_producto,cantidad) values(03,05,4);
 
