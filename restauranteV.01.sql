@@ -9,7 +9,7 @@ CREATE TABLE Restaurante(
 	Telefono bigint(15) NOT NULL
 );
 
-puto el que lo lea :v
+
 CREATE TABLE Metodo_pago(
 	Id_metodo_pago int NOT NULL PRIMARY KEY,
 	Nombre_metodo varchar(80) NOT NULL
@@ -120,7 +120,6 @@ CREATE TABLE Producto_Pedido(
 CREATE TABLE Factura(
 	Id_factura int,
 	
-	Id_producto int NOT NULL,
 	Id_pedido int NOT NULL,
 	Id_metodo_pago int NOT NULL,
 
