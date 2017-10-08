@@ -198,7 +198,7 @@ insert into proveedor(id_proveedor,Nombre_proveedor, telefono, descripcion)
 values(5, 'Zenu', 8586769,'empacadora de carnes frias');
 
 insert into proveedor(id_proveedor,Nombre_proveedor, telefono, descripcion)
-values(6,'Bavaria',3123453434, ' cerveceria'):
+values(6,'Bavaria',3123453434, ' cerveceria');
 
 insert into proveedor(id_proveedor,Nombre_proveedor, telefono, descripcion)
 values(7,'avicola colombiana sas',3112423435,  'avicola');
