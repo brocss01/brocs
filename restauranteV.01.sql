@@ -139,14 +139,19 @@ CREATE TABLE Factura(
 
 CREATE TABLE Mesa(
 	Id_mesa int NOT NULL PRIMARY KEY,
-	Id_cliente int,
 	Numero_mesa int NOT NULL,
 	Ubicacion varchar(60) NOT NULL,
 	Descripcion varchar(100) NOT NULL,
-	FOREIGN KEY (Id_cliente) REFERENCES Cliente(Id_cliente)
-
 );
 
+CREATE TABLE Cliente_Mesa(
+	Id_cliente int NOT NULL PRIMARY KEY,
+	Id_mesa int NOT NULL PRIMARY KEY, 
+	FOREIGN KEY (Id_cliente) references Cliente(Id_cliente),
+	FOREIGN KEY (Id_mesa) references Mesa(Id_mesa),
+	PRIMARY KEY (Id_cliente, Id_mesa)
+	
+);
 
 
 CREATE TABLE Cargo(
