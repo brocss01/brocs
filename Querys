@@ -31,7 +31,7 @@ group by MP.Id_metodo_pago
 
 Por oscar_the_best
 
-2)Buscar las quejas de los clientes cuya cantidad de producto-pedido sea 3 o mas, además es tipo comida rápida, cuyo insumo sea salchicha.
+2)Buscar las quejas de los clientes cuya cantidad de producto-pedido sea 2 o mas, además es tipo comida rápida, cuyo insumo sea salchicha.
 
 SELECT Q.Id_queja_reclamo, Q.Descripcion,I.Nombre_insumo, PP.Cantidad, CONCAT(C.Nombre_cliente,' ',C.Apellidos_cliente) Nombre
 FROM Queja_Reclamos Q INNER JOIN Cliente C ON Q.Id_cliente = C.Id_cliente
@@ -44,7 +44,7 @@ INNER JOIN Insumo I ON PRI.Id_insumo = I.Id_insumo
 WHERE PP.cantidad in(SELECT PP.cantidad
 FROM Producto_Pedido PP INNER JOIN Producto PR ON PP.Id_producto = PR.Id_producto
 INNER JOIN Tipo_producto TP ON PR.Id_tipo_producto = TP.Id_tipo_producto
-WHERE PP.cantidad >0 AND TP.Nombre_tipo_producto in
+WHERE PP.cantidad >2 AND TP.Nombre_tipo_producto in
 (SELECT TP.Nombre_tipo_producto
 FROM Tipo_producto TP INNER JOIN Producto PR ON TP.Id_tipo_producto = PR.Id_tipo_producto
 INNER JOIN Producto_Insumo PRI ON PR.Id_producto = PRI.Id_producto
