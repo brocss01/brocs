@@ -52,15 +52,15 @@ INSERT INTO Mesa(Id_mesa,Numero_mesa,Ubicacion,Descripcion) VALUES(3,'3','Serest
 INSERT INTO Mesa(Id_mesa,Numero_mesa,Ubicacion,Descripcion) VALUES(4,'4','Norte','Negra con pimienta');
 INSERT INTO Mesa(Id_mesa,Numero_mesa,Ubicacion,Descripcion) VALUES(5,'5','Al lado la ventana','Blanca con vista a la ventana y un salero');
 
-/////DATOS TABLA CLIENTE_MESA////////////////////////////////////////////////////////////////////////////////////////////
-INSERT INTO Cliente_Mesa(Id_cliente,Id_mesa) VALUES(1075688998,3);
-INSERT INTO Cliente_Mesa(Id_cliente,Id_mesa) VALUES(1075688998,2);
-INSERT INTO Cliente_Mesa(Id_cliente,Id_mesa) VALUES(99061800642,1);
-INSERT INTO Cliente_Mesa(Id_cliente,Id_mesa) VALUES(99061800642,5);
-INSERT INTO Cliente_Mesa(Id_cliente,Id_mesa) VALUES(99061800642,1);
-INSERT INTO Cliente_Mesa(Id_cliente,Id_mesa) VALUES(1789654342,4);
-INSERT INTO Cliente_Mesa(Id_cliente,Id_mesa) VALUES(112657542,2);
-INSERT INTO Cliente_Mesa(Id_cliente,Id_mesa) VALUES(112657542,5);
+/////DATOS TABLA Mesa_Cliente////////////////////////////////////////////////////////////////////////////////////////////
+INSERT INTO Mesa_Cliente(Id_cliente,Id_mesa) VALUES(1075688998,3);
+INSERT INTO Mesa_Cliente(Id_cliente,Id_mesa) VALUES(1075688998,2);
+INSERT INTO Mesa_Cliente(Id_cliente,Id_mesa) VALUES(99061800642,1);
+INSERT INTO Mesa_Cliente(Id_cliente,Id_mesa) VALUES(99061800642,5);
+INSERT INTO Mesa_Cliente(Id_cliente,Id_mesa) VALUES(99061800642,1);
+INSERT INTO Mesa_Cliente(Id_cliente,Id_mesa) VALUES(1789654342,4);
+INSERT INTO Mesa_Cliente(Id_cliente,Id_mesa) VALUES(112657542,2);
+INSERT INTO Mesa_Cliente(Id_cliente,Id_mesa) VALUES(112657542,5);
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 /////DATOS TABLA Tipo_producto////////////////////////////////////////////////////////////////////////////////////////////
