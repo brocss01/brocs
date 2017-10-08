@@ -24,3 +24,12 @@ insert into cliente(Id_cliente,Nombre_cliente,Apellidos_cliente,
 	Fecha_Nacimiento,Telefono,Genero,Direccion) values(112657542,'Karen',
 	'Castro Ortiz','1983/09/16',3015674523,'F','Calle 8 12-89');
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+///////DATOS TABLA QUEJA_RECLAMOS///////////////////////////////////////////////////////////////////////////////////////
+INSERT INTO Queja_Reclamos(Id_queja_reclamo,Id_cliente,Fecha_queja,Estado_queja,Fecha_solucion,Descripcion)
+	VALUES(1,99061800642,'2017/03/13','Cerrado','2017/03/20','La salchica estaba rancia');
+INSERT INTO Queja_Reclamos(Id_queja_reclamo,Id_cliente,Fecha_queja,Estado_queja,Fecha_solucion,Descripcion)
+	VALUES(2,1789654342,'2017/01/09','Cerrado','2017/01/19','El hot dog tenía un pelo');
+INSERT INTO Queja_Reclamos(Id_queja_reclamo,Id_cliente,Fecha_queja,Estado_queja,Fecha_solucion,Descripcion)
+	VALUES(3,112657542,'2017/02/02','Cerrado','2017/02/10','La sopa tenía una mosca');
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
