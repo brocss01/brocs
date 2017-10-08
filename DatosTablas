@@ -62,3 +62,41 @@ INSERT INTO Cliente_Mesa(Id_cliente,Id_mesa) VALUES(1789654342,4);
 INSERT INTO Cliente_Mesa(Id_cliente,Id_mesa) VALUES(112657542,2);
 INSERT INTO Cliente_Mesa(Id_cliente,Id_mesa) VALUES(112657542,5);
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/////DATOS TABLA Tipo_producto////////////////////////////////////////////////////////////////////////////////////////////
+insert into Tipo_producto(Id_tipo_producto ,Nombre_tipo_producto ,Descripcion )
+	values(1,'Bebidas','Cualquir tipo de bebidas exeptuando licores');
+
+insert into Tipo_producto(Id_tipo_producto ,Nombre_tipo_producto ,Descripcion )
+	values(2,'Entradas','Platos fuertes');
+
+insert into Tipo_producto(Id_tipo_producto ,Nombre_tipo_producto ,Descripcion )
+	values(3,'Postres','Platos dulces');
+
+insert into Tipo_producto(Id_tipo_producto ,Nombre_tipo_producto ,Descripcion )
+	values(4,'Comidas Rapidas','Platos rapidos');
+
+insert into Tipo_producto(Id_tipo_producto ,Nombre_tipo_producto ,Descripcion )
+	values(5,'Licores','Toda bebida que posea algun grado de alcohol');
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/////DATOS TABLA PEDIDO////////////////////////////////////////////////////////////////////////////////////////////
+insert into Pedido(Id_pedido,Id_cliente,Numero_pedido,Descripcion)
+	values(001,1075688998,01,'Compra de Bebidas');
+
+insert into Pedido(Id_pedido,Id_cliente,Numero_pedido,Descripcion)
+	values(002,99061800642,02,'Compra inmediata');
+
+insert into Pedido(Id_pedido,Id_cliente,Numero_pedido,Descripcion)
+	values(003,1075688998,03,' ');
+
+insert into Pedido(Id_pedido,Id_cliente,Numero_pedido,Descripcion)
+	values(004,1789654342,04,' ');
+
+insert into Pedido(Id_pedido,Id_cliente,Numero_pedido,Descripcion)
+	values(005,1075688998,05,' ');
+
+insert into Pedido(Id_pedido,Id_cliente,Numero_pedido,Descripcion)
+	values(006,11 2657542,06,' ');
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
