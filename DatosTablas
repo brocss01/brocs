@@ -169,3 +169,55 @@ insert into Producto_Pedido(Id_pedido,Id_producto,cantidad) values(03,05,4);
 
 insert into Producto_Pedido(Id_pedido,Id_producto,cantidad) values(03,03,4);
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/////////////TABLA PROVEEDOR//////////////////////////////////////////////////////////////////////////////////////
+
+insert into proveedor(id_proveedor,Nombre_proveedor, telefono, descripcion)
+values(1,'Postobon',3165748390,'fabricante y distribuidora de bebidas gaseosas');
+
+insert into proveedor(id_proveedor,Nombre_proveedor, telefono, descripcion)
+values(2,'Coca Cola', 4567968,'fabricante y distribuidora de bebidas gaseosas');
+
+insert into proveedor(id_proveedor,Nombre_proveedor, telefono, descripcion)
+values(3,'florhuila',3156473838,'dsitribuidora de arroz');
+
+insert into proveedor(id_proveedor,Nombre_proveedor, telefono, descripcion)
+values(4,'refisal',8576869,'empresa salinizadora');
+
+insert into proveedor(id_proveedor,Nombre_proveedor, telefono, descripcion)
+values(5, 'Zenu', 8586769,'empacadora de carnes frias');
+
+insert into proveedor(id_proveedor,Nombre_proveedor, telefono, descripcion)
+values(6,'Bavaria',3123453434, ' cerveceria'):
+
+insert into proveedor(id_proveedor,Nombre_proveedor, telefono, descripcion)
+values(7,'avicola colombiana sas',3112423435,  'avicola');
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//////////////////TABLA INSUMO_PROVEEDOR/////////////////////////////////////////////////////////////////////////////
+
+insert into Insumo_Proveedor(Id_insumo,Id_proveedor)
+values(1,1);
+
+insert into Insumo_Proveedor(Id_insumo,Id_proveedor)
+values(1,2);
+
+insert into Insumo_Proveedor(Id_insumo,Id_proveedor)
+values(2,3);
+
+insert into Insumo_Proveedor(Id_insumo,Id_proveedor)
+values(3,4);
+
+insert into Insumo_Proveedor(Id_insumo,Id_proveedor)
+values(4,5);
+
+insert into Insumo_Proveedor(Id_insumo,Id_proveedor)
+values(5,6);
+
+insert into Insumo_Proveedor(Id_insumo,Id_proveedor)
+values(6,7);
+
+insert into Insumo_Proveedor(Id_insumo,Id_proveedor)
+values(7,5);
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
