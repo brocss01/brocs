@@ -168,6 +168,16 @@ insert into Producto_Pedido(Id_pedido,Id_producto,cantidad) values(02,05,3);
 insert into Producto_Pedido(Id_pedido,Id_producto,cantidad) values(03,05,4);
 
 insert into Producto_Pedido(Id_pedido,Id_producto,cantidad) values(03,03,4);
+
+insert into Producto_Pedido(Id_pedido,Id_producto,cantidad) values(04,02,5);
+
+insert into Producto_Pedido(Id_pedido,Id_producto,cantidad) values(04,01,1);
+
+insert into Producto_Pedido(Id_pedido,Id_producto,cantidad) values(05,06,10);
+
+insert into Producto_Pedido(Id_pedido,Id_producto,cantidad) values(06,02,2);
+
+insert into Producto_Pedido(Id_pedido,Id_producto,cantidad) values(06,03,6);
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 /////////////TABLA PROVEEDOR//////////////////////////////////////////////////////////////////////////////////////
