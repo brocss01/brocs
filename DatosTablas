@@ -9,7 +9,7 @@ insert into Cargo(Id_Cargo,Nombre_Cargo,Descripcion)
 
 /////////DATOS TABLA CLIENTE///////////////////////////////////////////////////////////////////////////////////////////
 insert into cliente(Id_cliente,Nombre_cliente,Apellidos_cliente,
-	Fecha_Nacimiento,Telefono,Genero,Direccion) values(99061800642,
+	Fecha_Nacimiento,Telefono,Genero,Direccion) values(990618006,
 	'Sebastian','Garzon','1999/06/18',3142337375,'M','Diagonal 14#20-12');
 
 insert into cliente(Id_cliente,Nombre_cliente,Apellidos_cliente,
