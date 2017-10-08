@@ -41,6 +41,35 @@ CREATE TABLE Insumo_Proveedor(
 
 ) ENGINE=INNODB;
 
+CREATE TABLE Cargo(
+	Id_Cargo tinyint UNSIGNED NOT NULL PRIMARY KEY,
+	Nombre_Cargo varchar(20)  NOT NULL,
+	Descripcion varchar(200) NOT NULL
+
+);
+
+
+CREATE TABLE Empleado(
+	Id_Empleado int UNSIGNED NOT NULL PRIMARY KEY,
+	Id_Restaurante int UNSIGNED,
+	Id_Cargo tinyint UNSIGNED,
+
+	Nombre_Empleado varchar(50) NOT NULL,
+	Apellido varchar(50) NOT NULL,
+	Fecha_Nacimiento date NOT NULL,
+	Direccion varchar(100) NOT NULL,
+	Telefono int UNSIGNED NOT NULL,
+	Email varchar(100) NOT NULL,
+	Salario float UNSIGNED NOT NULL,
+	Documento int UNSIGNED NOT NULL,
+	Genero char(1) NOT NULL,
+	FOREIGN KEY (Id_Cargo) REFERENCES Cargo(Id_Cargo) ON DELETE SET NULL ON UPDATE CASCADE,
+	FOREIGN KEY (Id_Restaurante) REFERENCES Restaurante(Id_Restaurante) ON DELETE CASCADE ON UPDATE CASCADE
+	
+
+);
+
+
 CREATE TABLE Tipo_producto(
 	Id_tipo_producto int UNSIGNED NOT NULL PRIMARY KEY,
 	Nombre_tipo_producto varchar(80) NOT NULL,
@@ -152,33 +181,6 @@ CREATE TABLE Mesa_Cliente(
 
 )ENGINE=INNODB;
 
-CREATE TABLE Cargo(
-	Id_Cargo tinyint UNSIGNED NOT NULL PRIMARY KEY,
-	Nombre_Cargo varchar(20)  NOT NULL,
-	Descripcion varchar(200) NOT NULL
-
-);
-
-
-CREATE TABLE Empleado(
-	Id_Empleado int UNSIGNED NOT NULL PRIMARY KEY,
-	Id_Restaurante int UNSIGNED,
-	Id_Cargo tinyint UNSIGNED,
-
-	Nombre_Empleado varchar(50) NOT NULL,
-	Apellido varchar(50) NOT NULL,
-	Fecha_Nacimiento date NOT NULL,
-	Direccion varchar(100) NOT NULL,
-	Telefono int UNSIGNED NOT NULL,
-	Email varchar(100) NOT NULL,
-	Salario float UNSIGNED NOT NULL,
-	Documento int UNSIGNED NOT NULL,
-	Genero char(1) NOT NULL,
-	FOREIGN KEY (Id_Cargo) REFERENCES Cargo(Id_Cargo) ON DELETE SET NULL ON UPDATE CASCADE,
-	FOREIGN KEY (Id_Restaurante) REFERENCES Restaurante(Id_Restaurante) ON DELETE CASCADE ON UPDATE CASCADE
-	
-
-);
 
 /*show create table para mostrar el codigo de la tabla xD xD xD*/
 
