@@ -1,0 +1,188 @@
+CREATE DATABASE restaurante;
+
+USE restaurante;
+
+CREATE TABLE Restaurante(
+	Id_Restaurante int UNSIGNED NOT NULL PRIMARY KEY,
+	Nombre_Restaurante varchar(50) NOT NULL,
+	Direccion varchar(50) NOT NULL,
+	Telefono bigint(15) UNSIGNED NOT NULL
+);
+
+CREATE TABLE Metodo_pago(
+	Id_metodo_pago int UNSIGNED NOT NULL PRIMARY KEY,
+	Nombre_metodo varchar(80) NOT NULL
+);
+
+CREATE TABLE Proveedor(
+	Id_proveedor int UNSIGNED NOT NULL PRIMARY KEY,
+	Nombre_proveedor varchar(80) NOT NULL,
+	Telefono bigint(15) UNSIGNED NOT NULL,
+	Descripcion varchar(200) NOT NULL
+
+);
+	
+CREATE TABLE Insumo(
+	Id_insumo int UNSIGNED NOT NULL PRIMARY KEY,
+	Nombre_insumo varchar(80) NOT NULL,
+	Unidades_stock float UNSIGNED NOT NULL DEFAULT 0,
+	Unidades_gastadas float UNSIGNED NOT NULL DEFAULT 0,
+	Precio_insumo float UNSIGNED NOT NULL,
+	Direccion_imagen varchar(100)
+);
+
+
+CREATE TABLE Insumo_Proveedor(
+	Id_insumo int UNSIGNED NOT NULL,
+	Id_proveedor int UNSIGNED NOT NULL,
+	PRIMARY KEY(Id_proveedor, Id_insumo),
+	FOREIGN KEY (Id_insumo) REFERENCES Insumo(Id_insumo) ON DELETE CASCADE ON UPDATE CASCADE,
+	FOREIGN KEY (Id_proveedor) REFERENCES Proveedor(Id_proveedor) ON DELETE CASCADE ON UPDATE CASCADE
+
+) ENGINE=INNODB;
+
+CREATE TABLE Tipo_producto(
+	Id_tipo_producto int UNSIGNED NOT NULL PRIMARY KEY,
+	Nombre_tipo_producto varchar(80) NOT NULL,
+	Descripcion varchar(200) NOT NULL
+
+);
+
+CREATE TABLE Producto(
+	Id_producto int UNSIGNED NOT NULL PRIMARY KEY,
+	Id_Restaurante int UNSIGNED NOT NULL,
+	Id_tipo_producto int UNSIGNED NOT NULL,
+
+	Nombre_producto varchar(80) NOT NULL,
+	Precio float UNSIGNED NOT NULL,
+	Descripcion varchar(200) NOT NULL,
+	Unidades_stock int UNSIGNED NOT NULL DEFAULT 0,
+	Unidades_Vendidas int UNSIGNED NOT NULL DEFAULT 0,
+	Fecha_Caducidad date,
+	FOREIGN KEY (Id_Restaurante) REFERENCES Restaurante(Id_Restaurante) ON DELETE CASCADE ON UPDATE CASCADE,
+	FOREIGN KEY (Id_tipo_producto) REFERENCES Tipo_producto(Id_tipo_producto) ON DELETE CASCADE ON UPDATE CASCADE
+
+)ENGINE=INNODB;
+
+CREATE TABLE Producto_Insumo(
+	Id_producto int UNSIGNED NOT NULL,
+	Id_insumo int UNSIGNED NOT NULL,
+	Cantidad int UNSIGNED NOT NULL,
+	Fecha_Gasto date,
+	PRIMARY KEY(Id_producto, Id_insumo),
+	FOREIGN KEY (Id_producto) REFERENCES Producto(Id_producto) ON DELETE CASCADE ON UPDATE CASCADE,
+	FOREIGN KEY (Id_insumo) REFERENCES Insumo(Id_insumo) ON DELETE CASCADE ON UPDATE CASCADE
+
+
+)ENGINE=INNODB;
+
+CREATE TABLE Cliente(
+	Id_cliente int UNSIGNED NOT NULL PRIMARY KEY,
+	Nombre_cliente varchar(50) NOT NULL,
+	Apellidos_cliente varchar(50) NOT NULL,
+	Fecha_Nacimiento date NOT NULL,
+	Telefono int UNSIGNED NOT NULL,
+	Genero char(1) NOT NULL,
+	Direccion varchar(80) NOT NULL
+);
+
+CREATE TABLE Queja_Reclamos(
+	Id_queja_reclamo int UNSIGNED NOT NULL PRIMARY KEY,
+	Id_cliente int UNSIGNED,
+	Fecha_queja datetime NOT NULL,
+	Estado_queja varchar(20) NOT NULL,
+	Fecha_solucion datetime,
+	Descripcion varchar(200) NOT NULL,
+	FOREIGN KEY  (Id_cliente) REFERENCES Cliente(Id_cliente) ON DELETE SET NULL ON UPDATE CASCADE
+
+
+)ENGINE=INNODB;
+
+CREATE TABLE Pedido(
+	Id_pedido int UNSIGNED NOT NULL PRIMARY KEY,
+	Id_cliente int UNSIGNED NOT NULL,
+	Numero_pedido int UNSIGNED NOT NULL,
+	Descripcion varchar(200) NOT NULL,
+	FOREIGN KEY (Id_cliente) REFERENCES Cliente(Id_cliente) ON DELETE CASCADE ON UPDATE CASCADE
+)ENGINE=INNODB;
+
+CREATE TABLE Producto_Pedido(
+	Id_producto int UNSIGNED NOT NULL,
+	Id_pedido int UNSIGNED NOT NULL,
+	PRIMARY KEY(Id_producto, Id_pedido),
+	FOREIGN KEY(Id_producto) REFERENCES Producto(Id_producto) ON DELETE CASCADE ON UPDATE CASCADE,
+	FOREIGN KEY(Id_pedido) REFERENCES Pedido(Id_pedido) ON DELETE CASCADE ON UPDATE CASCADE
+
+)ENGINE=INNODB;
+
+CREATE TABLE Factura(
+	Id_factura int UNSIGNED NOT NULL,
+	
+	Id_producto int UNSIGNED NOT NULL,
+	Id_pedido int UNSIGNED NOT NULL,
+	Id_metodo_pago int UNSIGNED NOT NULL,
+
+	Descripcion varchar(200) NOT NULL,
+
+	Numero_factura int UNSIGNED NOT NULL,
+
+	Precio_total float UNSIGNED NOT NULL,
+
+	PRIMARY KEY (Id_factura),
+	FOREIGN KEY (Id_metodo_pago) REFERENCES Metodo_pago(Id_metodo_pago) ON DELETE CASCADE ON UPDATE CASCADE,
+	FOREIGN KEY (Id_producto) REFERENCES Producto_Pedido(Id_producto) ON DELETE CASCADE ON UPDATE CASCADE,
+	FOREIGN KEY (Id_pedido) REFERENCES Producto_Pedido(Id_pedido) ON DELETE CASCADE ON UPDATE CASCADE
+
+)ENGINE=INNODB;
+
+CREATE TABLE Mesa(
+	Id_mesa int UNSIGNED NOT NULL PRIMARY KEY,
+	Numero_mesa int UNSIGNED NOT NULL,
+	Ubicacion varchar(60) NOT NULL,
+	Descripcion varchar(150) NOT NULL
+);
+
+CREATE TABLE Mesa_Cliente(
+	Id_mesa int UNSIGNED NOT NULL,
+	Id_cliente int UNSIGNED NOT NULL,
+	PRIMARY KEY(Id_mesa,Id_cliente),
+	FOREIGN KEY (Id_mesa) REFERENCES Mesa(Id_mesa) ON DELETE CASCADE ON UPDATE CASCADE,
+	FOREIGN KEY (Id_cliente) REFERENCES Cliente(Id_cliente) ON DELETE CASCADE ON UPDATE CASCADE
+
+)ENGINE=INNODB;
+
+CREATE TABLE Cargo(
+	Id_Cargo tinyint UNSIGNED NOT NULL PRIMARY KEY,
+	Nombre_Cargo varchar(20)  NOT NULL,
+	Descripcion varchar(200) NOT NULL
+
+);
+
+
+CREATE TABLE Empleado(
+	Id_Empleado int UNSIGNED NOT NULL PRIMARY KEY,
+	Id_Restaurante int UNSIGNED,
+	Id_Cargo tinyint UNSIGNED,
+
+	Nombre_Empleado varchar(50) NOT NULL,
+	Apellido varchar(50) NOT NULL,
+	Fecha_Nacimiento date NOT NULL,
+	Direccion varchar(100) NOT NULL,
+	Telefono int UNSIGNED NOT NULL,
+	Email varchar(100) NOT NULL,
+	Salario float UNSIGNED NOT NULL,
+	Documento int UNSIGNED NOT NULL,
+	Genero char(1) NOT NULL,
+	FOREIGN KEY (Id_Cargo) REFERENCES Cargo(Id_Cargo) ON DELETE SET NULL ON UPDATE CASCADE,
+	FOREIGN KEY (Id_Restaurante) REFERENCES Restaurante(Id_Restaurante) ON DELETE CASCADE ON UPDATE CASCADE
+	
+
+);
+
+/*show create table para mostrar el codigo de la tabla xD xD xD*/
+
+
+
+
+
+
