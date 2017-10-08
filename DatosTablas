@@ -251,5 +251,40 @@ values(5,5,1,' ',5,10000);
 insert into Factura(Id_factura,Id_pedido,Id_metodo_pago,Descripcion,Numero_factura,Precio_total)
 values(6,6,1,' ',20,29000);
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////DATOS EMPLEADOS/////////////////////////////////////////////////////////////////////
+
+insert into empleado (id_empleado,id_restaurante,id_cargo,nombre_empleado,apellido,fecha_nacimiento,direccion, telefono,Email,salario,Documento,genero)
+values (1,1,1,'Mauricio','Gomez','1972-10-08','kra 189 # 83-71','3184978164','maogom@gmail.com','6000000','1080798134','M');
+
+insert into empleado (id_empleado,id_restaurante,id_cargo,nombre_empleado,apellido,fecha_nacimiento,direccion, telefono,Email,salario,Documento,genero)
+values (2,1,2,'Raul','Vargas','1980-12-16','kra 19 # 73-61','3105468101','raulV02@gmail.com','3500000','1020826798','M');
+
+insert into empleado (id_empleado,id_restaurante,id_cargo,nombre_empleado,apellido,fecha_nacimiento,direccion, telefono,Email,salario,Documento,genero)
+values (3,1,2,'Santiago','Ramos','1980-08-23','kra 170 # 73-81','3203158978','santiagoram@gmail.com','3500000','1020826798','M');
+
+insert into empleado (id_empleado,id_restaurante,id_cargo,nombre_empleado,apellido,fecha_nacimiento,direccion, telefono,Email,salario,Documento,genero)
+values (4,1,2,'Juliana','Avila','1985-08-12','kra 80 # 51-23','3142886794','juliavi@gmail.com','2500000','4080568976','F');
+
+insert into empleado (id_empleado,id_restaurante,id_cargo,nombre_empleado,apellido,fecha_nacimiento,direccion, telefono,Email,salario,Documento,genero)
+values (5,1,2,'Maria','Otalora','1982-01-22','kra 170 #186-51','3115876497','maota@gmail.com','2500000','42985167','F');
+
+insert into empleado (id_empleado,id_restaurante,id_cargo,nombre_empleado,apellido,fecha_nacimiento,direccion, telefono,Email,salario,Documento,genero)
+values (6,1,2,'Esteban','Hernandez','1990-11-25','kra 81 #176-71','3215987423','estebez@gmail.com','2000000','105789454','M');
+
+insert into empleado (id_empleado,id_restaurante,id_cargo,nombre_empleado,apellido,fecha_nacimiento,direccion, telefono,Email,salario,Documento,genero)
+values (7,1,3,'Edgar','Moreno','1991-07-28','kra 181 #173-91','3214897892','edgarmono@gmail.com','1800000','15687920','M');
+
+insert into empleado (id_empleado,id_restaurante,id_cargo,nombre_empleado,apellido,fecha_nacimiento,direccion, telefono,Email,salario,Documento,genero)
+values (8,1,3,'luis','Rojas','1989-09-30','kra 161 #36-68','3223334578','loras@gmail.com','1800000','105789454','M');
+
+insert into empleado (id_empleado,id_restaurante,id_cargo,nombre_empleado,apellido,fecha_nacimiento,direccion, telefono,Email,salario,Documento,genero)
+values (9,1,3,'Monica','Galindo','1992-05-16','kra 151 #86-67','3146489705','monicagalindo@gmail.com','1800000','42974168','F');
+
+insert into empleado (id_empleado,id_restaurante,id_cargo,nombre_empleado,apellido,fecha_nacimiento,direccion, telefono,Email,salario,Documento,genero)
+values (10,1,3,'Alejandra','Ramirez','1993-03-28','kra 151 #186-91','3139875208','Aleramirez@gmail.com','1800000','104069767','F');
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
 
 
