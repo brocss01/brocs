@@ -109,6 +109,7 @@ CREATE TABLE Pedido(
 CREATE TABLE Producto_Pedido(
 	Id_producto int UNSIGNED NOT NULL,
 	Id_pedido int UNSIGNED NOT NULL,
+	Cantidad int UNSIGNED NOT NULL,
 	PRIMARY KEY(Id_producto, Id_pedido),
 	FOREIGN KEY(Id_producto) REFERENCES Producto(Id_producto) ON DELETE CASCADE ON UPDATE CASCADE,
 	FOREIGN KEY(Id_pedido) REFERENCES Pedido(Id_pedido) ON DELETE CASCADE ON UPDATE CASCADE
