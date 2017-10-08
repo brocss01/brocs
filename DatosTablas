@@ -53,14 +53,14 @@ INSERT INTO Mesa(Id_mesa,Numero_mesa,Ubicacion,Descripcion) VALUES(4,'4','Norte'
 INSERT INTO Mesa(Id_mesa,Numero_mesa,Ubicacion,Descripcion) VALUES(5,'5','Al lado la ventana','Blanca con vista a la ventana y un salero');
 
 /////DATOS TABLA Mesa_Cliente////////////////////////////////////////////////////////////////////////////////////////////
-INSERT INTO Mesa_Cliente(Id_cliente,Id_mesa) VALUES(1075688998,3);
-INSERT INTO Mesa_Cliente(Id_cliente,Id_mesa) VALUES(1075688998,2);
-INSERT INTO Mesa_Cliente(Id_cliente,Id_mesa) VALUES(990618006,1);
-INSERT INTO Mesa_Cliente(Id_cliente,Id_mesa) VALUES(990618006,5);
-INSERT INTO Mesa_Cliente(Id_cliente,Id_mesa) VALUES(990618006,1);
-INSERT INTO Mesa_Cliente(Id_cliente,Id_mesa) VALUES(1789654342,4);
-INSERT INTO Mesa_Cliente(Id_cliente,Id_mesa) VALUES(112657542,2);
-INSERT INTO Mesa_Cliente(Id_cliente,Id_mesa) VALUES(112657542,5);
+INSERT INTO Mesa_Cliente(Id_mesa_cliente,Id_cliente,Id_mesa, fecha_uso) VALUES(1,1075688998,3,2017-9-13 11:10);
+INSERT INTO Mesa_Cliente(Id_mesa_cliente,Id_cliente,Id_mesa, fecha_uso)VALUES(2,1075688998,2,2017-9-14 12:50);
+INSERT INTO Mesa_Cliente(Id_mesa_cliente,Id_cliente,Id_mesa, fecha_uso) VALUES(3,990618006,1,2017-9-16 15:20);
+INSERT INTO Mesa_Cliente(Id_mesa_cliente,Id_cliente,Id_mesa, fecha_uso) VALUES(4,990618006,5,2017-9-20 9:30);
+INSERT INTO Mesa_Cliente(Id_mesa_cliente,Id_cliente,Id_mesa, fecha_uso) VALUES(5,990618006,1, 2017-9-22 17:25);
+INSERT INTO Mesa_Cliente(Id_mesa_cliente,Id_cliente,Id_mesa, fecha_uso) VALUES(6,1789654342,4 2017-9-24 17:55);
+INSERT INTO Mesa_Cliente(Id_mesa_cliente,Id_cliente,Id_mesa, fecha_uso) VALUES(7,112657542,2 2017-9-30 10:40);
+INSERT INTO Mesa_Cliente(Id_mesa_cliente,Id_cliente,Id_mesa, fecha_uso) VALUES(8,112657542,5 2017-9-30 16:40);
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 /////DATOS TABLA Tipo_producto////////////////////////////////////////////////////////////////////////////////////////////
