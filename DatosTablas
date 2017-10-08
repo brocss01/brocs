@@ -44,3 +44,21 @@ INSERT INTO Metodo_pago (Id_metodo_pago, Nombre_metodo) VALUES (1,"Efectivo");
 INSERT INTO Metodo_pago (Id_metodo_pago, Nombre_metodo) VALUES (2,"Tarjeta de crédito");
 INSERT INTO Metodo_pago (Id_metodo_pago, Nombre_metodo) VALUES (3,"Tarjeta de débito");
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//////DATOS MESA////////////////////////////////////////////////////////////////////////////////////////////////////////
+INSERT INTO Mesa(Id_mesa,Numero_mesa,Ubicacion,Descripcion) VALUES(1,'1','Izquierda','Azul con un salero');
+INSERT INTO Mesa(Id_mesa,Numero_mesa,Ubicacion,Descripcion) VALUES(2,'2','Derecha','Roja con salsa de tomate');
+INSERT INTO Mesa(Id_mesa,Numero_mesa,Ubicacion,Descripcion) VALUES(3,'3','Arriba','Amarilla con servilletas y palillos');
+INSERT INTO Mesa(Id_mesa,Numero_mesa,Ubicacion,Descripcion) VALUES(4,'4','Abajo','Negra con pimienta');
+INSERT INTO Mesa(Id_mesa,Numero_mesa,Ubicacion,Descripcion) VALUES(5,'5','Al lado de la ventana','Blanca con vista a la ventana y un salero');
+
+/////DATOS TABLA CLIENTE_MESA////////////////////////////////////////////////////////////////////////////////////////////
+INSERT INTO Cliente_Mesa(Id_cliente,Id_mesa) VALUES(1075688998,3);
+INSERT INTO Cliente_Mesa(Id_cliente,Id_mesa) VALUES(1075688998,2);
+INSERT INTO Cliente_Mesa(Id_cliente,Id_mesa) VALUES(99061800642,1);
+INSERT INTO Cliente_Mesa(Id_cliente,Id_mesa) VALUES(99061800642,5);
+INSERT INTO Cliente_Mesa(Id_cliente,Id_mesa) VALUES(99061800642,1);
+INSERT INTO Cliente_Mesa(Id_cliente,Id_mesa) VALUES(1789654342,4);
+INSERT INTO Cliente_Mesa(Id_cliente,Id_mesa) VALUES(112657542,2);
+INSERT INTO Cliente_Mesa(Id_cliente,Id_mesa) VALUES(112657542,5);
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
