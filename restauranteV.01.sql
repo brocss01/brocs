@@ -28,8 +28,8 @@ CREATE TABLE Proveedor(
 CREATE TABLE Insumo(
 	Id_insumo int NOT NULL PRIMARY KEY,
 	Nombre_insumo varchar(80) NOT NULL,
-	Unidades_stock int NOT NULL,
-	Unidades_gastadas int NOT NULL,
+	Unidades_stock float NOT NULL default 0,
+	Unidades_gastadas float NOT NULL default 0,
 	Precio_insumo float NOT NULL,
 	Direccion_imagen varchar(100)
 );
