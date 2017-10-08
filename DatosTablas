@@ -85,7 +85,7 @@ insert into Pedido(Id_pedido,Id_cliente,Numero_pedido,Descripcion)
 	values(001,1075688998,01,'Compra de Bebidas');
 
 insert into Pedido(Id_pedido,Id_cliente,Numero_pedido,Descripcion)
-	values(002,99061800642,02,'Compra inmediata');
+	values(002,990618006,02,'Compra inmediata');
 
 insert into Pedido(Id_pedido,Id_cliente,Numero_pedido,Descripcion)
 	values(003,1075688998,03,' ');
@@ -97,7 +97,7 @@ insert into Pedido(Id_pedido,Id_cliente,Numero_pedido,Descripcion)
 	values(005,1075688998,05,' ');
 
 insert into Pedido(Id_pedido,Id_cliente,Numero_pedido,Descripcion)
-	values(006,11 2657542,06,' ');
+	values(006,112657542,06,' ');
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
