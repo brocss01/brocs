@@ -1,4 +1,5 @@
-1)Decir cual es el metodo de pago que mas se usa cuando un cliente pide un producto ** que tiene un insumo ** el cual es proveido por **.
+1)Decir cual es el metodo de pago que mas se usa cuando un cliente pide un producto gaseosa que tiene un insumo gaseosa
+el cual es proveido por Postobon.
 
 SELECT MP.Nombre_metodo, Pr.Nombre_producto
 FROM Metodo_pago MP INNER JOIN Factura F ON MP.Id_metodo_pago = F.Id_metodo_pago
