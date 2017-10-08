@@ -118,7 +118,6 @@ CREATE TABLE Producto_Pedido(
 CREATE TABLE Factura(
 	Id_factura int UNSIGNED NOT NULL,
 	
-	Id_producto int UNSIGNED NOT NULL,
 	Id_pedido int UNSIGNED NOT NULL,
 	Id_metodo_pago int UNSIGNED NOT NULL,
 
@@ -130,7 +129,6 @@ CREATE TABLE Factura(
 
 	PRIMARY KEY (Id_factura),
 	FOREIGN KEY (Id_metodo_pago) REFERENCES Metodo_pago(Id_metodo_pago) ON DELETE CASCADE ON UPDATE CASCADE,
-	FOREIGN KEY (Id_producto) REFERENCES Producto_Pedido(Id_producto) ON DELETE CASCADE ON UPDATE CASCADE,
 	FOREIGN KEY (Id_pedido) REFERENCES Producto_Pedido(Id_pedido) ON DELETE CASCADE ON UPDATE CASCADE
 
 )ENGINE=INNODB;
