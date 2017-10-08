@@ -231,3 +231,25 @@ insert into Insumo_Proveedor(Id_insumo,Id_proveedor)
 values(7,5);
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//////////////////TABLA FACTURA/////////////////////////////////////////////////////////////////////////////
+insert into Factura(Id_factura,Id_pedido,Id_metodo_pago,Descripcion,Numero_factura,Precio_total)
+values(1,1,2,'Bebidas',12,66000);
+
+insert into Factura(Id_factura,Id_pedido,Id_metodo_pago,Descripcion,Numero_factura,Precio_total)
+values(2,2,1,'Compra',21,30000);
+
+insert into Factura(Id_factura,Id_pedido,Id_metodo_pago,Descripcion,Numero_factura,Precio_total)
+values(3,3,3,' ',13,35000);
+
+insert into Factura(Id_factura,Id_pedido,Id_metodo_pago,Descripcion,Numero_factura,Precio_total)
+values(4,4,1,' ',10,55000);
+
+insert into Factura(Id_factura,Id_pedido,Id_metodo_pago,Descripcion,Numero_factura,Precio_total)
+values(5,5,1,' ',5,10000);
+
+insert into Factura(Id_factura,Id_pedido,Id_metodo_pago,Descripcion,Numero_factura,Precio_total)
+values(6,6,1,' ',29000);
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
