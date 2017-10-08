@@ -136,6 +136,7 @@ CREATE TABLE Factura(
 
 CREATE TABLE Mesa(
 	Id_mesa int UNSIGNED NOT NULL PRIMARY KEY,
+	Cantidad_sillas int UNSIGNED,
 	Numero_mesa int UNSIGNED NOT NULL,
 	Ubicacion varchar(60) NOT NULL,
 	Descripcion varchar(150) NOT NULL
