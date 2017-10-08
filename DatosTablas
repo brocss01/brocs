@@ -27,7 +27,7 @@ insert into cliente(Id_cliente,Nombre_cliente,Apellidos_cliente,
 
 ///////DATOS TABLA QUEJA_RECLAMOS///////////////////////////////////////////////////////////////////////////////////////
 INSERT INTO Queja_Reclamos(Id_queja_reclamo,Id_cliente,Fecha_queja,Estado_queja,Fecha_solucion,Descripcion)
-	VALUES(1,99061800642,'2017/03/13','Cerrado','2017/03/20','La salchica estaba rancia');
+	VALUES(1,990618006,'2017/03/13','Cerrado','2017/03/20','La salchica estaba rancia');
 INSERT INTO Queja_Reclamos(Id_queja_reclamo,Id_cliente,Fecha_queja,Estado_queja,Fecha_solucion,Descripcion)
 	VALUES(2,1789654342,'2017/01/09','Cerrado','2017/01/19','El hot dog tenía un pelo');
 INSERT INTO Queja_Reclamos(Id_queja_reclamo,Id_cliente,Fecha_queja,Estado_queja,Fecha_solucion,Descripcion)
