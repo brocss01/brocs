@@ -224,6 +224,30 @@ insert into cliente(Id_cliente,Nombre_cliente,Apellidos_cliente,
 
 
 
+
+
+
+/////DATOS TABLA PEDIDO////////////////////////////////////////////////////////////////////////////////////////////
+insert into Pedido(Id_pedido,Id_cliente,Numero_pedido,fecha,Descripcion)
+	values(001,1075688998,01,'2019-9-16 13:20:30','Compra de Bebidas');
+
+insert into Pedido(Id_pedido,Id_cliente,Numero_pedido,fecha,Descripcion)
+	values(002,990618006,02,'2019-9-16 11:20:30','Compra inmediata');
+	
+insert into Pedido(Id_pedido,Id_cliente,Numero_pedido,fecha,Descripcion)
+	values(003,1075688998,03,'2019-9-16 15:20:30',' ');
+
+insert into Pedido(Id_pedido,Id_cliente,Numero_pedido,fecha,Descripcion)
+	values(004,1789654342,04,'2019-9-16 19:20:30',' ');
+	
+insert into Pedido(Id_pedido,Id_cliente,Numero_pedido,fecha,Descripcion)
+	values(005,1075688998,05,'2019-10-16 15:20:30',' ');
+
+insert into Pedido(Id_pedido,Id_cliente,Numero_pedido,fecha,Descripcion)
+	values(006,112657542,06,'2018-9-16 15:20:30',' ');
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
  PD: Solo puse los que necesitaba, no todos los que debería haber
 ///////DATOS TABLA QUEJA_RECLAMOS///////////////////////////////////////////////////////////////////////////////////////
 INSERT INTO Queja_Reclamos(Id_queja_reclamo,Id_producto,Id_pedido,Fecha_queja,Estado_queja,Fecha_solucion,Descripcion)
@@ -234,28 +258,6 @@ INSERT INTO Queja_Reclamos(Id_queja_reclamo,Id_producto,Id_pedido,Fecha_queja,Es
 	VALUES(3,7,4,'2017/03/13','Cerrado','2017/03/20','El perro tenia un pelo');
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-
-
-/////DATOS TABLA PEDIDO////////////////////////////////////////////////////////////////////////////////////////////
-insert into Pedido(Id_pedido,Id_cliente,Numero_pedido,Descripcion)
-	values(001,1075688998,01,'Compra de Bebidas');
-
-insert into Pedido(Id_pedido,Id_cliente,Numero_pedido,Descripcion)
-	values(002,990618006,02,'Compra inmediata');
-
-insert into Pedido(Id_pedido,Id_cliente,Numero_pedido,Descripcion)
-	values(003,1075688998,03,' ');
-
-insert into Pedido(Id_pedido,Id_cliente,Numero_pedido,Descripcion)
-	values(004,1789654342,04,' ');
-
-insert into Pedido(Id_pedido,Id_cliente,Numero_pedido,Descripcion)
-	values(005,1075688998,05,' ');
-
-insert into Pedido(Id_pedido,Id_cliente,Numero_pedido,Descripcion)
-	values(006,112657542,06,' ');
-
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 ///// DATOS TABLA Producto_Pedido///////////////////////////////////////////////////////////////////////////////////////////////
@@ -294,23 +296,23 @@ insert into Producto_Pedido(Id_pedido,Id_producto,cantidad) values(06,03,6);
 
 
 //////////////////TABLA FACTURA/////////////////////////////////////////////////////////////////////////////
-insert into Factura(Id_factura,Id_pedido,Id_metodo_pago,Descripcion,Numero_factura,Precio_total)
-values(1,1,2,'Bebidas',12,66000);
+insert into Factura(Id_factura,Id_cliente,Id_pedido,Id_metodo_pago,Descripcion,Numero_factura,Precio_total)
+values(1,1,1,2,'Bebidas',12,66000);
 
-insert into Factura(Id_factura,Id_pedido,Id_metodo_pago,Descripcion,Numero_factura,Precio_total)
-values(2,2,1,'Compra',21,30000);
+insert into Factura(Id_factura,Id_cliente,Id_pedido,Id_metodo_pago,Descripcion,Numero_factura,Precio_total)
+values(2,3,2,1,'Compra',21,30000);
 
-insert into Factura(Id_factura,Id_pedido,Id_metodo_pago,Descripcion,Numero_factura,Precio_total)
-values(3,3,3,' ',13,35000);
+insert into Factura(Id_factura,Id_cliente,Id_pedido,Id_metodo_pago,Descripcion,Numero_factura,Precio_total)
+values(3,2,3,3,' ',13,35000);
 
-insert into Factura(Id_factura,Id_pedido,Id_metodo_pago,Descripcion,Numero_factura,Precio_total)
-values(4,4,1,' ',10,55000);
+insert into Factura(Id_factura,Id_cliente,Id_pedido,Id_metodo_pago,Descripcion,Numero_factura,Precio_total)
+values(4,5,4,1,' ',10,55000);
 
-insert into Factura(Id_factura,Id_pedido,Id_metodo_pago,Descripcion,Numero_factura,Precio_total)
-values(5,5,1,' ',5,10000);
+insert into Factura(Id_factura,Id_cliente,Id_pedido,Id_metodo_pago,Descripcion,Numero_factura,Precio_total)
+values(5,6,5,1,' ',5,10000);
 
-insert into Factura(Id_factura,Id_pedido,Id_metodo_pago,Descripcion,Numero_factura,Precio_total)
-values(6,6,1,' ',20,29000);
+insert into Factura(Id_factura,Id_cliente,Id_pedido,Id_metodo_pago,Descripcion,Numero_factura,Precio_total)
+values(6,7,6,1,' ',20,29000);
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
@@ -339,7 +341,7 @@ INSERT INTO Mesa_Cliente(Id_mesa_cliente,Id_cliente,Id_mesa, fecha_uso) VALUES(1
 INSERT INTO Mesa_Cliente(Id_mesa_cliente,Id_cliente),Id_mesa, fecha_uso VALUES(13,34234,1,'2009-9-16 15:20:30');
 INSERT INTO Mesa_Cliente(Id_mesa_cliente,Id_cliente,Id_mesa, fecha_uso) VALUES(14,3,1,'2019-9-16 15:20:30');
 
-INSERT INTO Mesa_Cliente(Id_mesa_cliente,Id_cliente,Id_mesa, fecha_uso) VALUES(15,9,5,,'2019-9-16 15:20:30');
+INSERT INTO Mesa_Cliente(Id_mesa_cliente,Id_cliente,Id_mesa, fecha_uso) VALUES(15,9,5,'2019-9-16 15:20:30');
 INSERT INTO Mesa_Cliente(Id_mesa_cliente,Id_cliente,Id_mesa, fecha_uso) VALUES(16,10,5,'2019-9-16 15:20:30');
 INSERT INTO Mesa_Cliente(Id_mesa_cliente,Id_cliente,Id_mesa, fecha_uso) VALUES(17,11,4,'2019-9-16 11:20:30');
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
