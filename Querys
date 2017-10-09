@@ -90,6 +90,27 @@ BY: Bryan
  where E.salario in (SELECT C.id_Cargo, sum(E.salario) total_salario_por_cargo FROM cargo , Empleado
 group by C.id_Cargo) ;
 
+5)
+
+muestre nombre de los inusmos depeendiendo un Proveedor y los prodcutos con los que se hacen un prodcutos .
+
+
+
+select INS.Nombre_insumo, PRO.Nombre_proveedor, PRO.Nombre_producto
+from Proveedor PRO inner join Insumo_Proveedor INSPRO on PRO.Id_proveedor = INSPRO.Id_proveedor
+inner join Insumo INS on INSPRO.Id_insumo = INS.Id_insumo inner join Producto_Insumo PRI on
+INS.Id_insumo = PRI.Id_insumo inner join producto PROD PRI.Id_producto = PROd.Id_producto; 
+
+
+select DISTINCT  INS.Id_insumo,PRO.Nombre_proveedor ,INS.Nombre_insumo,  P.Nombre_producto,
+p.Fecha_Caducidad, sum(precio_insumo)
+    
+    from producto P inner join Producto_Insumo PRI on P.Id_producto = PRI.Id_producto inner join
+    insumo INS on PRI.Id_insumo = INS.Id_insumo inner join Insumo_Proveedor INSPRO on INS.Id_insumo = INSPRO.Id_insumo
+    inner join Proveedor PRO on INSPRO.Id_Proveedor = PRO.Id_Proveedor
+    where PRO.Nombre_proveedor in ('zenu','postobon')
+    order by INS.Id_insumo asc;
+
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 el gasto realizado y el ingreso recibido en todos los pedidos hechos por todos los clientes de menos de 11 productos
 que hayan hecho un pedido entre las 12 y las 6 de la tarde el entre el 28 y el 30 de Septiembre de 2017,
