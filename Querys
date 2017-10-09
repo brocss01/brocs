@@ -152,7 +152,25 @@ and prodped.id_pedido in
 
 by Carlos
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+select pr.Nombre_producto, pr.precio as precio, prov.Nombre_proveedor, insp.Fecha_gasto,
+c.Nombre_cliente as cliente
+from producto pr inner join producto_insumo insp on pr.Id_producto=insp.Id_producto
+inner join insumo ins on insp.Id_insumo=ins.Id_insumo
+inner join insumo_proveedor insprov on ins.Id_insumo=insprov.Id_insumo
+inner join Proveedor prov on insprov.Id_proveedor=prov.Id_proveedor
+inner join cliente c
+where ins.Nombre_insumo='salchichas' and pr.precio in (select max(pr.precio) 
+from producto pr) and c.Nombre_cliente in (select c.Nombre_cliente from cliente c 
+inner join pedido pe on c.Id_cliente=pe.Id_cliente 
+inner join Producto_Pedido prop on pe.Id_pedido=prop.Id_pedido
+inner join Producto pro on prop.Id_producto=pro.Id_producto
+inner join producto_insumo insp on pro.Id_producto=insp.Id_producto
+inner join insumo ins on insp.Id_insumo=ins.Id_insumo
+where ins.Nombre_insumo='salchichas'and pro.precio in (select max(pr.precio)
+from producto pr));
 
+-Gaspar
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 Robinson
 1)Contar la cantidad de clientes que hay por la ubicacion de cada mesa junto con la cantidad de hombres y mujeres pero solo
