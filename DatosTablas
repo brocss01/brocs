@@ -309,10 +309,30 @@ insert into Factura(Id_factura,Id_cliente,Id_pedido,Id_metodo_pago,Descripcion,N
 values(4,5,4,1,' ',10,55000);
 
 insert into Factura(Id_factura,Id_cliente,Id_pedido,Id_metodo_pago,Descripcion,Numero_factura,Precio_total)
-values(5,6,5,1,' ',5,10000);
+values(5,6,5,1,' ',5,100500);
 
 insert into Factura(Id_factura,Id_cliente,Id_pedido,Id_metodo_pago,Descripcion,Numero_factura,Precio_total)
-values(6,7,6,1,' ',20,29000);
+values(6,7,6,1,' ',20,25600);
+
+
+insert into Factura(Id_factura,Id_cliente,Id_pedido,Id_metodo_pago,Descripcion,Numero_factura,Precio_total)
+values(1231,4,6,1,' ',20,292000);
+
+insert into Factura(Id_factura,Id_cliente,Id_pedido,Id_metodo_pago,Descripcion,Numero_factura,Precio_total)
+values(121,4,1,1,' ',20,29000);
+
+insert into Factura(Id_factura,Id_cliente,Id_pedido,Id_metodo_pago,Descripcion,Numero_factura,Precio_total)
+values(122331,8,1,1,' ',20,99000);
+
+insert into Factura(Id_factura,Id_cliente,Id_pedido,Id_metodo_pago,Descripcion,Numero_factura,Precio_total)
+values(12323231,9,3,1,' ',20,59000);
+
+insert into Factura(Id_factura,Id_cliente,Id_pedido,Id_metodo_pago,Descripcion,Numero_factura,Precio_total)
+values(12321231,10,5,1,' ',20,69000);
+
+insert into Factura(Id_factura,Id_cliente,Id_pedido,Id_metodo_pago,Descripcion,Numero_factura,Precio_total)
+values(11231,11,4,1,' ',20,666);
+
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
