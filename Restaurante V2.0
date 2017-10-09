@@ -119,6 +119,7 @@ CREATE TABLE Pedido(
 	Id_pedido int UNSIGNED NOT NULL PRIMARY KEY,
 	Id_cliente int UNSIGNED NOT NULL,
 	Numero_pedido int UNSIGNED NOT NULL,
+	fecha datetima not null,
 	Descripcion varchar(200) NOT NULL,
 	FOREIGN KEY (Id_cliente) REFERENCES Cliente(Id_cliente) ON DELETE CASCADE ON UPDATE CASCADE
 )ENGINE=INNODB;
@@ -177,7 +178,6 @@ CREATE TABLE Mesa_Cliente(
 	id_mesa_cliente int UNSIGNED NOT NULL PRIMARY KEY,
 	Id_mesa int UNSIGNED NOT NULL,
 	Id_cliente int UNSIGNED NOT NULL,
-	Fecha_Uso datetime,
 	FOREIGN KEY (Id_mesa) REFERENCES Mesa(Id_mesa) ON DELETE CASCADE ON UPDATE CASCADE,
 	FOREIGN KEY (Id_cliente) REFERENCES Cliente(Id_cliente) ON DELETE CASCADE ON UPDATE CASCADE
 
