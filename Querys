@@ -92,17 +92,17 @@ group by C.id_Cargo) ;
 
 5)
 
-muestre nombre de los inusmos depeendiendo un Proveedor y los prodcutos con los que se hacen un prodcutos .
-
-
-
-select INS.Nombre_insumo, PRO.Nombre_proveedor, PRO.Nombre_producto
-from Proveedor PRO inner join Insumo_Proveedor INSPRO on PRO.Id_proveedor = INSPRO.Id_proveedor
-inner join Insumo INS on INSPRO.Id_insumo = INS.Id_insumo inner join Producto_Insumo PRI on
-INS.Id_insumo = PRI.Id_insumo inner join producto PROD PRI.Id_producto = PROd.Id_producto; 
-
-
 select DISTINCT  INS.Id_insumo,PRO.Nombre_proveedor ,INS.Nombre_insumo,  P.Nombre_producto,
+p.Fecha_Caducidad
+    
+    from producto P inner join Producto_Insumo PRI on P.Id_producto = PRI.Id_producto inner join
+    insumo INS on PRI.Id_insumo = INS.Id_insumo inner join Insumo_Proveedor INSPRO on INS.Id_insumo = INSPRO.Id_insumo
+    inner join Proveedor PRO on INSPRO.Id_Proveedor = PRO.Id_Proveedor
+    where PRO.Nombre_proveedor in ('zenu','postobon')
+    order by INS.Id_insumo asc;
+    
+    //////
+    select DISTINCT  INS.Id_insumo,PRO.Nombre_proveedor ,INS.Nombre_insumo,  P.Nombre_producto,
 p.Fecha_Caducidad, sum(precio_insumo)
     
     from producto P inner join Producto_Insumo PRI on P.Id_producto = PRI.Id_producto inner join
