@@ -16,8 +16,8 @@ WHERE I.Nombre_insumo = 'gaseosa' AND Pro.Nombre_proveedor in(
 SELECT Pro.Nombre_proveedor
 FROM Proveedor Pro 
 GROUP BY Pro.Id_proveedor
-HAVING Pro.Nombre_proveedor = 'Postobon'))) 
-AND MP.Id_metodo_pago in(SELECT count(MP.Id_metodo_pago)
+HAVING Pro.Nombre_proveedor = 'Postobon')))  Group by MP.Id_metodo_pago
+having COUNT(*) =(SELECT count(MP.Id_metodo_pago)
 FROM Metodo_pago MP INNER JOIN Factura F ON MP.Id_metodo_pago = F.Id_metodo_pago
 INNER JOIN Producto_Pedido PP ON F.Id_pedido = PP.Id_pedido
 INNER JOIN Producto Pr ON PP.Id_producto = Pr.Id_producto
@@ -26,8 +26,7 @@ INNER JOIN Insumo I ON PRI.Id_insumo = I.Id_insumo
 INNER JOIN Insumo_Proveedor IP ON I.Id_insumo = IP.Id_insumo
 INNER JOIN Proveedor Pro ON IP.Id_proveedor = Pro.Id_proveedor
 WHERE I.Nombre_insumo = 'gaseosa' AND Pro.Nombre_proveedor = 'Postobon'
-group by MP.Id_metodo_pago
-)limit 1;
+group by MP.Id_metodo_pago limit 1);
 
 Por oscar_the_best
 
