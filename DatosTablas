@@ -177,6 +177,8 @@ insert into Producto_Pedido(Id_pedido,Id_producto,cantidad) values(03,03,4);
 
 insert into Producto_Pedido(Id_pedido,Id_producto,cantidad) values(04,02,5);
 
+insert into Producto_Pedido(Id_pedido,Id_producto,cantidad) values(04,07,3);
+
 insert into Producto_Pedido(Id_pedido,Id_producto,cantidad) values(04,01,1);
 
 insert into Producto_Pedido(Id_pedido,Id_producto,cantidad) values(05,06,10);
@@ -297,6 +299,12 @@ values(3,1,12,'2017/01/01');
 
 insert into Producto_Insumo(Id_Producto,Id_insumo,Cantidad,Fecha_Gasto)
 values(7,7,18,'2017/01/03');
+
+insert into Producto_Insumo(Id_Producto,Id_insumo,Cantidad,Fecha_Gasto)
+values(2,7,22,'2017/04/01');
+
+insert into Producto_Insumo(Id_Producto,Id_insumo,Cantidad,Fecha_Gasto)
+values(2,6,21,'2017/04/01');
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
  
 PD: Solo puse los que necesitaba, no todos los que debería haber
