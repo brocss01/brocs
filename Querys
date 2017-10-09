@@ -76,7 +76,18 @@ ME.Numero_mesa desc ;
 v 2.0 lo mismo de la version 1.0 pero sumando el valor de los productos por orden de pedido.
 SELECT Numero_pedido, sum(precio) precio_por_pedido FROM Pedido , producto  group by Numero_pedido;
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-BY: Bryan_the__best_of_the_best_:y
+BY: Bryan
+4)
+ select DISTINCT E.Id_Empleado, concat(E.Nombre_Empleado,' ',E.Apellido) Nombre_Empleado, C.Nombre_Cargo,E.salario,
+ INS.Precio_insumo,INS.Nombre_insumo, INS.Id_insumo, P.Nombre_producto,
+ PRO.Nombre_proveedor
+ from cargo C inner join Empleado E on C.Id_Cargo = E.Id_Cargo inner join
+ Restaurante R on R.Id_Restaurante = E.Id_Restaurante inner join producto P on
+ R.Id_Restaurante=P.Id_Restaurante inner join Producto_Insumo PRI on P.Id_producto = PRI.Id_producto inner join
+ insumo INS on PRI.Id_insumo = INS.Id_insumo inner join Insumo_Proveedor INSPRO on INS.Id_insumo = INSPRO.Id_insumo 
+ inner join Proveedor PRO on INSPRO.Id_Proveedor = PRO.Id_Proveedor
+ where E.salario in (SELECT C.id_Cargo, sum(E.salario) total_salario_por_cargo FROM cargo , Empleado
+group by C.id_Cargo) ;
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 el gasto realizado y el ingreso recibido en todos los pedidos hechos por todos los clientes de menos de 11 productos
