@@ -35,9 +35,9 @@ Por oscar_the_best
 salchicha, además, mostrar el nombre del cliente que realizó la queja.
 
 SELECT Q.Id_queja_reclamo, Q.Descripcion,I.Nombre_insumo, PP.Cantidad, CONCAT(C.Nombre_cliente,' ',C.Apellidos_cliente) Nombre
-FROM Queja_Reclamos Q INNER JOIN Cliente C ON Q.Id_cliente = C.Id_cliente
-INNER JOIN Pedido P ON C.Id_cliente = P.Id_cliente
-INNER JOIN Producto_Pedido PP ON P.Id_pedido = PP.Id_pedido
+FROM Queja_Reclamos Q INNER JOIN Producto_Pedido PP ON Q.Id_pedido = PP.Id_pedido AND Q.Id_producto = PP.Id_producto
+INNER JOIN Pedido P ON PP.Id_pedido = P.Id_pedido
+INNER JOIN Cliente C ON P.Id_cliente = C.Id_cliente
 INNER JOIN Producto PR ON PP.Id_producto = PR.Id_producto
 INNER JOIN Tipo_producto TP ON PR.Id_tipo_producto = TP.Id_tipo_producto
 INNER JOIN Producto_Insumo PRI ON PR.Id_producto = PRI.Id_producto
@@ -50,11 +50,10 @@ WHERE PP.cantidad >2 AND TP.Nombre_tipo_producto in
 FROM Tipo_producto TP INNER JOIN Producto PR ON TP.Id_tipo_producto = PR.Id_tipo_producto
 INNER JOIN Producto_Insumo PRI ON PR.Id_producto = PRI.Id_producto
 INNER JOIN Insumo I ON PRI.Id_insumo = I.Id_insumo
-WHERE TP.Nombre_tipo_producto = 'Comidas Rapidas' AND I.Nombre_insumo in
+WHERE TP.Nombre_tipo_producto = 'Comidas Rapidas' )) AND I.Nombre_insumo in
 (SELECT I.Nombre_insumo
 FROM Insumo I 
 group by I.Id_insumo
-having I.Nombre_insumo = 'salchichas'
-)));
+having I.Nombre_insumo = 'salchichas');
 
 By: Oscar_the_best
