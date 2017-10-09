@@ -77,3 +77,47 @@ v 2.0 lo mismo de la version 1.0 pero sumando el valor de los productos por orde
 SELECT Numero_pedido, sum(precio) precio_por_pedido FROM Pedido , producto  group by Numero_pedido;
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 BY: Bryan_the__best_of_the_best_:y
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+el gasto realizado y el ingreso recibido en todos los pedidos hechos por todos los clientes de menos de 11 productos
+que hayan hecho un pedido entre las 12 y las 6 de la tarde el entre el 28 y el 30 de Septiembre de 2017,
+mostrar el cliente, el pedido, ingresos y gastos ordenando los clientes alfabeticamente;
+
+
+select cl.nombre_cliente, pe.Numero_pedido,sum(prpe.cantidad * pr.precio) ingreso, sum(inpr.cantidad * ins.precio_insumo) gasto
+from cliente cl left outer join Pedido pe on cl.id_cliente=pe.id_cliente 
+and pe.id_cliente in(select pe.id_cliente from pedido pe 
+where date(pe.fecha) between '2017-09-28' and '2017-09-30' and time(pe.fecha) between '12:00:00' and '18:00:00')
+left outer join producto_pedido prpe on prpe.id_pedido=pe.id_pedido
+left outer join producto pr on pr.id_producto=prpe.id_producto
+left outer join producto_insumo inpr on pr.id_producto=inpr.id_producto
+left outer join insumo ins on ins.id_insumo=inpr.id_insumo
+group by pe.numero_pedido having sum(prpe.cantidad)<11  and pe.numero_pedido is not null
+order by cl.nombre_cliente;
+
+by Carlos
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+listar todos los clientes que hayan consumido cualquier producto hecho con salchichas dadas por zenu 
+en cualquier dia entre el 15 y el 30 de septiembre en una fecha determinada
+
+select pr.nombre_producto, prov.Nombre_proveedor, pe.fecha as 'fecha de consumo', cl.nombre_cliente
+from proveedor prov inner join Insumo_Proveedor provin on prov.id_proveedor=provin.id_proveedor
+inner join insumo ins on provin.id_insumo=ins.id_insumo
+inner join producto_insumo prodin on ins.id_insumo=prodin.id_insumo
+inner join producto pr on prodin.id_producto = pr.id_producto
+inner join producto_pedido prodped on pr.id_producto=prodped.id_producto
+inner join pedido pe on pe.id_pedido=prodped.id_pedido
+inner join cliente cl on pe.id_cliente=cl.id_cliente
+where provin.id_proveedor in
+(select prov.id_proveedor from Proveedor prov where prov.Nombre_proveedor like 'zenu')
+and prodin.id_insumo in
+(select ins.id_insumo from insumo ins where ins.Nombre_insumo like 'salch%')
+and prodped.id_pedido in
+(select pe.id_pedido from Pedido pe where date(pe.fecha) between '2017-09-15' and '2017-09-30');
+
+by Carlos
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
