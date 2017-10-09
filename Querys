@@ -68,6 +68,7 @@ MCL.fecha_uso, ME.Numero_mesa
 from cargo C right outer join Empleado E on C.Id_Cargo = E.Id_Cargo right outer join
 Restaurante R on R.Id_Restaurante = E.Id_Restaurante right outer join producto P on
 R.Id_Restaurante=P.Id_Restaurante inner join Producto_Pedido PRP on P.Id_producto = PRP.Id_producto
+
 inner join Pedido PE on PRP.Id_pedido = PE.Id_pedido inner join cliente CL on PE.Id_cliente = CL.Id_cliente
 inner join Mesa_Cliente MCL on CL.Id_cliente = MCL.Id_cliente inner join Mesa ME on MCL.Id_mesa = ME.Id_mesa
 where C.nombre_cargo = 'mesero' and Nombre_Empleado like 'L%' order by PE.Numero_pedido desc ,
@@ -130,5 +131,67 @@ and prodped.id_pedido in
 
 by Carlos
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+Robinson
+1)Contar la cantidad de clientes que hay por la ubicacion de cada mesa junto con la cantidad de hombres y mujeres pero solo
+mostrar aquellas ubicaciones en donde la cantidad de clientes supera a la media de clientes por ubicacion.
+
+SELECT M.Ubicacion, CL.Genero,
+	(
+		SELECT COUNT(SBMC.Id_cliente) PERSONAS FROM Mesa_Cliente SBMC
+		WHERE 
+			  SBMC.Id_mesa = M.Id_mesa
+		GROUP BY M.Ubicacion
+	) PERSONAS,
+	(
+		SELECT COUNT(MC.Id_cliente) from Mesa_Cliente MC INNER JOIN cliente C on MC.Id_cliente = C.Id_cliente
+		WHERE 
+		C.Genero = CL.Genero AND
+		MC.Id_mesa = M.Id_mesa
+		GROUP BY M.Ubicacion
+
+	) PERSONAS_GENERO,
+		(
+		SELECT SUM(F.Precio_total) from Mesa_Cliente MC INNER JOIN cliente C on MC.Id_cliente = C.Id_cliente
+		INNER JOIN Factura F ON F.Id_cliente = MC.Id_cliente
+		WHERE 
+		C.Genero = CL.Genero AND
+		MC.Id_mesa = M.Id_mesa AND
+		F.Id_cliente = MC.Id_cliente
+		GROUP BY M.Ubicacion
+
+	) Cantida_Pagada_Genero
+
+    FROM Mesa_Cliente MC RIGHT OUTER JOIN Mesa M ON MC.Id_mesa = M.Id_mesa  INNER JOIN Cliente CL ON
+	MC.Id_cliente = CL.Id_cliente
+
+	GROUP BY M.Ubicacion,CL.Genero having PERSONAS >(
+							SELECT AVG(PERSONAS) MEDIA 
+							FROM (
+								SELECT M.Ubicacion, COUNT(MC.Id_cliente) PERSONAS FROM Mesa_Cliente MC RIGHT OUTER JOIN Mesa M
+								ON MC.Id_mesa = M.Id_mesa INNER JOIN Cliente CL ON MC.Id_cliente = CL.Id_cliente
+								GROUP BY M.Ubicacion
+
+							) as PERSONAS_MESA
+						)
+;
+
+2)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
