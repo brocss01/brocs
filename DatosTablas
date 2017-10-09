@@ -1,30 +1,3 @@
-/////////DATOS TABLA CARGO///////////////////////////////////////////////////////////////////////////////////////////
-insert into Cargo(Id_Cargo,Nombre_Cargo,Descripcion)
-	values(1,'Administracion','Encargado de administra empleado e insumos');
-insert into Cargo(Id_Cargo,Nombre_Cargo,Descripcion)
-	values(2,'Chef','utiliza los insumos en Productos');
-insert into Cargo(Id_Cargo,Nombre_Cargo,Descripcion)
-	values(3,'Mesero','Encargado factura y mesa');
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-/////////DATOS TABLA CLIENTE///////////////////////////////////////////////////////////////////////////////////////////
-insert into cliente(Id_cliente,Nombre_cliente,Apellidos_cliente,
-	Fecha_Nacimiento,Telefono,Genero,Direccion) values(990618006,
-	'Sebastian','Garzon','1999/06/18',3142337375,'M','Diagonal 14#20-12');
-
-insert into cliente(Id_cliente,Nombre_cliente,Apellidos_cliente,
-	Fecha_Nacimiento,Telefono,Genero,Direccion) values(1075688998,'Juan Carlos',
-	'Robayo Perez','1980/11/23',3123451254,'M','CRA 7A 45-12');
-
-insert into cliente(Id_cliente,Nombre_cliente,Apellidos_cliente,
-	Fecha_Nacimiento,Telefono,Genero,Direccion) values(1789654342,'Maria Camila',
-	'Suarez Gomez','1995/01/10',3152435612,'F','Cra 1B #78-01');
-
-insert into cliente(Id_cliente,Nombre_cliente,Apellidos_cliente,
-	Fecha_Nacimiento,Telefono,Genero,Direccion) values(112657542,'Karen',
-	'Castro Ortiz','1983/09/16',3015674523,'F','Calle 8 12-89');
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
 ///////DATO TABLA RESTAURANTE////////////////////////////////////////////////////////////////////////////////////////////
 INSERT INTO Restaurante (Id_Restaurante, Nombre_Restaurante,Direccion,Telefono)
 	VALUES (1,"Restaurante-Bar BROCS","Carrera 14d bis 7-64",3183367880);
@@ -36,61 +9,31 @@ INSERT INTO Metodo_pago (Id_metodo_pago, Nombre_metodo) VALUES (2,"Tarjeta de cr
 INSERT INTO Metodo_pago (Id_metodo_pago, Nombre_metodo) VALUES (3,"Tarjeta de débito");
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-//////DATOS MESA////////////////////////////////////////////////////////////////////////////////////////////////////////
-INSERT INTO Mesa(Id_mesa,Numero_mesa,Ubicacion,Descripcion) VALUES(1,'1','Oeste','Azul con un salero');
-INSERT INTO Mesa(Id_mesa,Numero_mesa,Ubicacion,Descripcion) VALUES(2,'2','Noroeste','Roja con salsa de tomate');
-INSERT INTO Mesa(Id_mesa,Numero_mesa,Ubicacion,Descripcion) VALUES(3,'3','Sereste','Amarilla con servilletas y palillos');
-INSERT INTO Mesa(Id_mesa,Numero_mesa,Ubicacion,Descripcion) VALUES(4,'4','Norte','Negra con pimienta');
-INSERT INTO Mesa(Id_mesa,Numero_mesa,Ubicacion,Descripcion) VALUES(5,'5','Al lado la ventana','Blanca con vista a la ventana y un salero');
 
-/////DATOS TABLA Mesa_Cliente////////////////////////////////////////////////////////////////////////////////////////////
-INSERT INTO Mesa_Cliente(Id_mesa_cliente,Id_cliente,Id_mesa, fecha_uso) VALUES(1,1075688998,3,'2017-9-13 11:10:02');
-INSERT INTO Mesa_Cliente(Id_mesa_cliente,Id_cliente,Id_mesa, fecha_uso)VALUES(2,1075688998,2,'2017-9-14 12:50:09');
-INSERT INTO Mesa_Cliente(Id_mesa_cliente,Id_cliente,Id_mesa, fecha_uso) VALUES(3,990618006,1,'2017-9-16 15:20:30');
-INSERT INTO Mesa_Cliente(Id_mesa_cliente,Id_cliente,Id_mesa, fecha_uso) VALUES(4,990618006,5,'2017-9-20 9:30:12');
-INSERT INTO Mesa_Cliente(Id_mesa_cliente,Id_cliente,Id_mesa, fecha_uso) VALUES(5,990618006,1, '2017-9-22 17:25:26');
-INSERT INTO Mesa_Cliente(Id_mesa_cliente,Id_cliente,Id_mesa, fecha_uso) VALUES(6,1789654342,4, '2017-9-24 17:55:56');
-INSERT INTO Mesa_Cliente(Id_mesa_cliente,Id_cliente,Id_mesa, fecha_uso) VALUES(7,112657542,2, '2017-9-30 10:40:12');
-INSERT INTO Mesa_Cliente(Id_mesa_cliente,Id_cliente,Id_mesa, fecha_uso) VALUES(8,112657542,5, '2017-9-30 16:40:32');
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////TABLA PROVEEDOR//////////////////////////////////////////////////////////////////////////////////////
 
-/////DATOS TABLA Tipo_producto////////////////////////////////////////////////////////////////////////////////////////////
-insert into Tipo_producto(Id_tipo_producto ,Nombre_tipo_producto ,Descripcion )
-	values(1,'Bebidas','Cualquir tipo de bebidas exeptuando licores');
+insert into proveedor(id_proveedor,Nombre_proveedor, telefono, descripcion)
+values(1,'Postobon',3165748390,'fabricante y distribuidora de bebidas gaseosas');
 
-insert into Tipo_producto(Id_tipo_producto ,Nombre_tipo_producto ,Descripcion )
-	values(2,'Entradas','Platos fuertes');
+insert into proveedor(id_proveedor,Nombre_proveedor, telefono, descripcion)
+values(2,'Coca Cola', 4567968,'fabricante y distribuidora de bebidas gaseosas');
 
-insert into Tipo_producto(Id_tipo_producto ,Nombre_tipo_producto ,Descripcion )
-	values(3,'Postres','Platos dulces');
+insert into proveedor(id_proveedor,Nombre_proveedor, telefono, descripcion)
+values(3,'florhuila',3156473838,'dsitribuidora de arroz');
 
-insert into Tipo_producto(Id_tipo_producto ,Nombre_tipo_producto ,Descripcion )
-	values(4,'Comidas Rapidas','Platos rapidos');
+insert into proveedor(id_proveedor,Nombre_proveedor, telefono, descripcion)
+values(4,'refisal',8576869,'empresa salinizadora');
 
-insert into Tipo_producto(Id_tipo_producto ,Nombre_tipo_producto ,Descripcion )
-	values(5,'Licores','Toda bebida que posea algun grado de alcohol');
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+insert into proveedor(id_proveedor,Nombre_proveedor, telefono, descripcion)
+values(5, 'Zenu', 8586769,'empacadora de carnes frias');
 
-/////DATOS TABLA PEDIDO////////////////////////////////////////////////////////////////////////////////////////////
-insert into Pedido(Id_pedido,Id_cliente,Numero_pedido,Descripcion)
-	values(001,1075688998,01,'Compra de Bebidas');
+insert into proveedor(id_proveedor,Nombre_proveedor, telefono, descripcion)
+values(6,'Bavaria',3123453434, ' cerveceria');
 
-insert into Pedido(Id_pedido,Id_cliente,Numero_pedido,Descripcion)
-	values(002,990618006,02,'Compra inmediata');
+insert into proveedor(id_proveedor,Nombre_proveedor, telefono, descripcion)
+values(7,'avicola colombiana sas',3112423435,  'avicola');
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-insert into Pedido(Id_pedido,Id_cliente,Numero_pedido,Descripcion)
-	values(003,1075688998,03,' ');
-
-insert into Pedido(Id_pedido,Id_cliente,Numero_pedido,Descripcion)
-	values(004,1789654342,04,' ');
-
-insert into Pedido(Id_pedido,Id_cliente,Numero_pedido,Descripcion)
-	values(005,1075688998,05,' ');
-
-insert into Pedido(Id_pedido,Id_cliente,Numero_pedido,Descripcion)
-	values(006,112657542,06,' ');
-
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 ///// DATOS TABLA INSUMOS///////////////////////////////////////////////////////////////////////////////////////////////
 insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo)
@@ -115,6 +58,55 @@ values(6, 'huevo',120,300);
 insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo)
 values(7, 'salchichas', 300,1000);
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+//////////////////TABLA INSUMO_PROVEEDOR/////////////////////////////////////////////////////////////////////////////
+
+insert into Insumo_Proveedor(Id_insumo,Id_proveedor)
+values(1,1);
+
+insert into Insumo_Proveedor(Id_insumo,Id_proveedor)
+values(1,2);
+
+insert into Insumo_Proveedor(Id_insumo,Id_proveedor)
+values(2,3);
+
+insert into Insumo_Proveedor(Id_insumo,Id_proveedor)
+values(3,4);
+
+insert into Insumo_Proveedor(Id_insumo,Id_proveedor)
+values(4,5);
+
+insert into Insumo_Proveedor(Id_insumo,Id_proveedor)
+values(5,6);
+
+insert into Insumo_Proveedor(Id_insumo,Id_proveedor)
+values(6,7);
+
+insert into Insumo_Proveedor(Id_insumo,Id_proveedor)
+values(7,5);
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+/////DATOS TABLA Tipo_producto////////////////////////////////////////////////////////////////////////////////////////////
+insert into Tipo_producto(Id_tipo_producto ,Nombre_tipo_producto ,Descripcion )
+	values(1,'Bebidas','Cualquir tipo de bebidas exeptuando licores');
+
+insert into Tipo_producto(Id_tipo_producto ,Nombre_tipo_producto ,Descripcion )
+	values(2,'Entradas','Platos fuertes');
+
+insert into Tipo_producto(Id_tipo_producto ,Nombre_tipo_producto ,Descripcion )
+	values(3,'Postres','Platos dulces');
+
+insert into Tipo_producto(Id_tipo_producto ,Nombre_tipo_producto ,Descripcion )
+	values(4,'Comidas Rapidas','Platos rapidos');
+
+insert into Tipo_producto(Id_tipo_producto ,Nombre_tipo_producto ,Descripcion )
+	values(5,'Licores','Toda bebida que posea algun grado de alcohol');
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 
 ///// DATOS TABLA PRODUCTO///////////////////////////////////////////////////////////////////////////////////////////////
 insert into Producto(Id_producto ,Id_Restaurante ,Id_tipo_producto ,Nombre_producto,
@@ -146,6 +138,125 @@ insert into Producto(Id_producto ,Id_Restaurante ,Id_tipo_producto ,Nombre_produ
 Precio ,Descripcion ,Unidades_stock ,Unidades_Vendidas ,Fecha_Caducidad )
 values(07,1,4,'Hot Dog',5500,'Comida Rapida',17,1,'2017/10/17');
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+//////DATOS TABLA PRODUCTO_INSUMO//////////////////////////////////////////////////////////////////////////////////////////////////////
+insert into Producto_Insumo(Id_Producto,Id_insumo,Cantidad,Fecha_Gasto)
+values(3,1,12,'2017/01/01');
+
+insert into Producto_Insumo(Id_Producto,Id_insumo,Cantidad,Fecha_Gasto)
+values(7,7,18,'2017/01/03');
+
+insert into Producto_Insumo(Id_Producto,Id_insumo,Cantidad,Fecha_Gasto)
+values(2,7,22,'2017/04/01');
+
+insert into Producto_Insumo(Id_Producto,Id_insumo,Cantidad,Fecha_Gasto)
+values(2,6,21,'2017/04/01');
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+/////////DATOS TABLA CLIENTE///////////////////////////////////////////////////////////////////////////////////////////
+insert into cliente(Id_cliente,Nombre_cliente,Apellidos_cliente,
+	Fecha_Nacimiento,Telefono,Genero,Direccion) values(990618006,
+	'Sebastian','Garzon','1999/06/18',3142337375,'M','Diagonal 14#20-12');
+
+insert into cliente(Id_cliente,Nombre_cliente,Apellidos_cliente,
+	Fecha_Nacimiento,Telefono,Genero,Direccion) values(1075688998,'Juan Carlos',
+	'Robayo Perez','1980/11/23',3123451254,'M','CRA 7A 45-12');
+
+insert into cliente(Id_cliente,Nombre_cliente,Apellidos_cliente,
+	Fecha_Nacimiento,Telefono,Genero,Direccion) values(1789654342,'Maria Camila',
+	'Suarez Gomez','1995/01/10',3152435612,'F','Cra 1B #78-01');
+
+insert into cliente(Id_cliente,Nombre_cliente,Apellidos_cliente,
+	Fecha_Nacimiento,Telefono,Genero,Direccion) values(112657542,'Karen',
+	'Castro Ortiz','1983/09/16',3015674523,'F','Calle 8 12-89');
+	
+insert into cliente(Id_cliente,Nombre_cliente,Apellidos_cliente,
+	Fecha_Nacimiento,Telefono,Genero,Direccion) values(122,'Robinson',
+	'Muñoz','1998/07/24',3015674523,'M','Calle 8 12-89');
+
+insert into cliente(Id_cliente,Nombre_cliente,Apellidos_cliente,
+	Fecha_Nacimiento,Telefono,Genero,Direccion) values(1,'Dario',
+	'Muñoz','1998/07/24',3015674523,'M','Calle 8 12-89');
+
+insert into cliente(Id_cliente,Nombre_cliente,Apellidos_cliente,
+	Fecha_Nacimiento,Telefono,Genero,Direccion) values(2,'Oscar',
+	'Muñoz','1998/07/24',3015674523,'M','Calle 8 12-89');
+
+insert into cliente(Id_cliente,Nombre_cliente,Apellidos_cliente,
+	Fecha_Nacimiento,Telefono,Genero,Direccion) values(3,'Daniela',
+	'Muñoz','1998/07/24',3015674523,'F','Calle 8 12-89');
+
+insert into cliente(Id_cliente,Nombre_cliente,Apellidos_cliente,
+	Fecha_Nacimiento,Telefono,Genero,Direccion) values(4,'Ruben',
+	'Muñoz','1998/07/24',3015674523,'M','Calle 8 12-89');
+
+insert into cliente(Id_cliente,Nombre_cliente,Apellidos_cliente,
+	Fecha_Nacimiento,Telefono,Genero,Direccion) values(5,'Ana Jarieth',
+	'Hernandez','2002/03/13',3015674523,'F','Calle 8 12-89');
+
+insert into cliente(Id_cliente,Nombre_cliente,Apellidos_cliente,
+	Fecha_Nacimiento,Telefono,Genero,Direccion) values(6,'Natalia',
+	'Rodriguez','2002/03/13',3015674523,'F','Calle 8 12-89');
+
+insert into cliente(Id_cliente,Nombre_cliente,Apellidos_cliente,
+	Fecha_Nacimiento,Telefono,Genero,Direccion) values(7,'Cristel',
+	'Muñoz','2002/03/13',3015674523,'F','Calle 8 12-89');
+
+insert into cliente(Id_cliente,Nombre_cliente,Apellidos_cliente,
+	Fecha_Nacimiento,Telefono,Genero,Direccion) values(8,'Adriana',
+	'Navia','2002/03/13',3015674523,'F','Calle 8 12-89');
+
+insert into cliente(Id_cliente,Nombre_cliente,Apellidos_cliente,
+	Fecha_Nacimiento,Telefono,Genero,Direccion) values(9,'Magaly',
+	'Arogote','1999/03/13',3015674523,'F','Calle 8 12-89');
+
+insert into cliente(Id_cliente,Nombre_cliente,Apellidos_cliente,
+	Fecha_Nacimiento,Telefono,Genero,Direccion) values(10,'Valentina',
+	'Trjillo','2002/03/13',3015674523,'F','Calle 8 12-89');
+
+insert into cliente(Id_cliente,Nombre_cliente,Apellidos_cliente,
+	Fecha_Nacimiento,Telefono,Genero,Direccion) values(11,'Samanta',
+	'Noise','2002/03/13',3015674523,'F','Calle 8 12-89');	
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+ PD: Solo puse los que necesitaba, no todos los que debería haber
+///////DATOS TABLA QUEJA_RECLAMOS///////////////////////////////////////////////////////////////////////////////////////
+INSERT INTO Queja_Reclamos(Id_queja_reclamo,Id_producto,Id_pedido,Fecha_queja,Estado_queja,Fecha_solucion,Descripcion)
+	VALUES(1,7,2,'2017/03/13','Cerrado','2017/03/20','La salchica estaba rancia');
+INSERT INTO Queja_Reclamos(Id_queja_reclamo,Id_producto,Id_pedido,Fecha_queja,Estado_queja,Fecha_solucion,Descripcion)
+	VALUES(2,2,4,'2017/03/13','Cerrado','2017/03/20','El huevo estaba podrido');
+INSERT INTO Queja_Reclamos(Id_queja_reclamo,Id_producto,Id_pedido,Fecha_queja,Estado_queja,Fecha_solucion,Descripcion)
+	VALUES(3,7,4,'2017/03/13','Cerrado','2017/03/20','El perro tenia un pelo');
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+/////DATOS TABLA PEDIDO////////////////////////////////////////////////////////////////////////////////////////////
+insert into Pedido(Id_pedido,Id_cliente,Numero_pedido,Descripcion)
+	values(001,1075688998,01,'Compra de Bebidas');
+
+insert into Pedido(Id_pedido,Id_cliente,Numero_pedido,Descripcion)
+	values(002,990618006,02,'Compra inmediata');
+
+insert into Pedido(Id_pedido,Id_cliente,Numero_pedido,Descripcion)
+	values(003,1075688998,03,' ');
+
+insert into Pedido(Id_pedido,Id_cliente,Numero_pedido,Descripcion)
+	values(004,1789654342,04,' ');
+
+insert into Pedido(Id_pedido,Id_cliente,Numero_pedido,Descripcion)
+	values(005,1075688998,05,' ');
+
+insert into Pedido(Id_pedido,Id_cliente,Numero_pedido,Descripcion)
+	values(006,112657542,06,' ');
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 
 ///// DATOS TABLA Producto_Pedido///////////////////////////////////////////////////////////////////////////////////////////////
 insert into Producto_Pedido(Id_pedido,Id_producto,cantidad) values(01,01,1);
@@ -181,57 +292,6 @@ insert into Producto_Pedido(Id_pedido,Id_producto,cantidad) values(06,02,2);
 insert into Producto_Pedido(Id_pedido,Id_producto,cantidad) values(06,03,6);
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-/////////////TABLA PROVEEDOR//////////////////////////////////////////////////////////////////////////////////////
-
-insert into proveedor(id_proveedor,Nombre_proveedor, telefono, descripcion)
-values(1,'Postobon',3165748390,'fabricante y distribuidora de bebidas gaseosas');
-
-insert into proveedor(id_proveedor,Nombre_proveedor, telefono, descripcion)
-values(2,'Coca Cola', 4567968,'fabricante y distribuidora de bebidas gaseosas');
-
-insert into proveedor(id_proveedor,Nombre_proveedor, telefono, descripcion)
-values(3,'florhuila',3156473838,'dsitribuidora de arroz');
-
-insert into proveedor(id_proveedor,Nombre_proveedor, telefono, descripcion)
-values(4,'refisal',8576869,'empresa salinizadora');
-
-insert into proveedor(id_proveedor,Nombre_proveedor, telefono, descripcion)
-values(5, 'Zenu', 8586769,'empacadora de carnes frias');
-
-insert into proveedor(id_proveedor,Nombre_proveedor, telefono, descripcion)
-values(6,'Bavaria',3123453434, ' cerveceria');
-
-insert into proveedor(id_proveedor,Nombre_proveedor, telefono, descripcion)
-values(7,'avicola colombiana sas',3112423435,  'avicola');
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-//////////////////TABLA INSUMO_PROVEEDOR/////////////////////////////////////////////////////////////////////////////
-
-insert into Insumo_Proveedor(Id_insumo,Id_proveedor)
-values(1,1);
-
-insert into Insumo_Proveedor(Id_insumo,Id_proveedor)
-values(1,2);
-
-insert into Insumo_Proveedor(Id_insumo,Id_proveedor)
-values(2,3);
-
-insert into Insumo_Proveedor(Id_insumo,Id_proveedor)
-values(3,4);
-
-insert into Insumo_Proveedor(Id_insumo,Id_proveedor)
-values(4,5);
-
-insert into Insumo_Proveedor(Id_insumo,Id_proveedor)
-values(5,6);
-
-insert into Insumo_Proveedor(Id_insumo,Id_proveedor)
-values(6,7);
-
-insert into Insumo_Proveedor(Id_insumo,Id_proveedor)
-values(7,5);
-
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 //////////////////TABLA FACTURA/////////////////////////////////////////////////////////////////////////////
 insert into Factura(Id_factura,Id_pedido,Id_metodo_pago,Descripcion,Numero_factura,Precio_total)
@@ -252,6 +312,49 @@ values(5,5,1,' ',5,10000);
 insert into Factura(Id_factura,Id_pedido,Id_metodo_pago,Descripcion,Numero_factura,Precio_total)
 values(6,6,1,' ',20,29000);
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+//////DATOS MESA////////////////////////////////////////////////////////////////////////////////////////////////////////
+INSERT INTO Mesa(Id_mesa,Numero_mesa,Ubicacion,Descripcion) VALUES(1,'1','Oeste','Azul con un salero');
+INSERT INTO Mesa(Id_mesa,Numero_mesa,Ubicacion,Descripcion) VALUES(2,'2','Noroeste','Roja con salsa de tomate');
+INSERT INTO Mesa(Id_mesa,Numero_mesa,Ubicacion,Descripcion) VALUES(3,'3','Sereste','Amarilla con servilletas y palillos');
+INSERT INTO Mesa(Id_mesa,Numero_mesa,Ubicacion,Descripcion) VALUES(4,'4','Norte','Negra con pimienta');
+INSERT INTO Mesa(Id_mesa,Numero_mesa,Ubicacion,Descripcion) VALUES(5,'5','Al lado la ventana','Blanca con vista a la ventana y un salero');
+
+
+/////DATOS TABLA Mesa_Cliente////////////////////////////////////////////////////////////////////////////////////////////
+INSERT INTO Mesa_Cliente(Id_mesa_cliente,Id_cliente,Id_mesa, fecha_uso) VALUES(1,1075688998,3,'2017-9-13 11:10:02');
+INSERT INTO Mesa_Cliente(Id_mesa_cliente,Id_cliente,Id_mesa, fecha_uso)VALUES(2,1075688998,2,'2017-9-14 12:50:09');
+INSERT INTO Mesa_Cliente(Id_mesa_cliente,Id_cliente,Id_mesa, fecha_uso) VALUES(3,990618006,1,'2017-9-16 15:20:30');
+INSERT INTO Mesa_Cliente(Id_mesa_cliente,Id_cliente,Id_mesa, fecha_uso) VALUES(4,990618006,5,'2017-9-20 9:30:12');
+INSERT INTO Mesa_Cliente(Id_mesa_cliente,Id_cliente,Id_mesa, fecha_uso) VALUES(5,990618006,1, '2017-9-22 17:25:26');
+INSERT INTO Mesa_Cliente(Id_mesa_cliente,Id_cliente,Id_mesa, fecha_uso) VALUES(6,1789654342,4, '2017-9-24 17:55:56');
+INSERT INTO Mesa_Cliente(Id_mesa_cliente,Id_cliente,Id_mesa, fecha_uso) VALUES(7,112657542,2, '2017-9-30 10:40:12');
+INSERT INTO Mesa_Cliente(Id_mesa_cliente,Id_cliente,Id_mesa, fecha_uso) VALUES(8,112657542,5, '2017-9-30 16:40:32');
+
+INSERT INTO Mesa_Cliente(Id_mesa_cliente,Id_cliente,Id_mesa, fecha_uso) VALUES(9,654645,5,'2017-9-16 15:20:30');
+INSERT INTO Mesa_Cliente(Id_mesa_cliente,Id_cliente,Id_mesa, fecha_uso) VALUES(10,4,5,'2017-9-16 17:20:30');
+INSERT INTO Mesa_Cliente(Id_mesa_cliente,Id_cliente,Id_mesa, fecha_uso) VALUES(11,4,654645,'2019-9-16 15:20:30');
+INSERT INTO Mesa_Cliente(Id_mesa_cliente,Id_cliente,Id_mesa, fecha_uso) VALUES(12,112657542,1,'2019-9-16 15:20:30');
+INSERT INTO Mesa_Cliente(Id_mesa_cliente,Id_cliente),Id_mesa, fecha_uso VALUES(13,34234,1,'2009-9-16 15:20:30');
+INSERT INTO Mesa_Cliente(Id_mesa_cliente,Id_cliente,Id_mesa, fecha_uso) VALUES(14,3,1,'2019-9-16 15:20:30');
+
+INSERT INTO Mesa_Cliente(Id_mesa_cliente,Id_cliente,Id_mesa, fecha_uso) VALUES(15,9,5,,'2019-9-16 15:20:30');
+INSERT INTO Mesa_Cliente(Id_mesa_cliente,Id_cliente,Id_mesa, fecha_uso) VALUES(16,10,5,'2019-9-16 15:20:30');
+INSERT INTO Mesa_Cliente(Id_mesa_cliente,Id_cliente,Id_mesa, fecha_uso) VALUES(17,11,4,'2019-9-16 11:20:30');
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+/////////DATOS TABLA CARGO///////////////////////////////////////////////////////////////////////////////////////////
+insert into Cargo(Id_Cargo,Nombre_Cargo,Descripcion)
+	values(1,'Administracion','Encargado de administra empleado e insumos');
+insert into Cargo(Id_Cargo,Nombre_Cargo,Descripcion)
+	values(2,'Chef','utiliza los insumos en Productos');
+insert into Cargo(Id_Cargo,Nombre_Cargo,Descripcion)
+	values(3,'Mesero','Encargado factura y mesa');
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
 //////////////////////////////DATOS EMPLEADOS/////////////////////////////////////////////////////////////////////
 
 insert into empleado (id_empleado,id_restaurante,id_cargo,nombre_empleado,apellido,fecha_nacimiento,direccion, telefono,Email,salario,Documento,genero)
@@ -286,28 +389,8 @@ values (10,1,3,'Alejandra','Ramirez','1993-03-28','kra 151 #186-91','3139875208'
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-//////DATOS TABLA PRODUCTO_INSUMO//////////////////////////////////////////////////////////////////////////////////////////////////////
-insert into Producto_Insumo(Id_Producto,Id_insumo,Cantidad,Fecha_Gasto)
-values(3,1,12,'2017/01/01');
 
-insert into Producto_Insumo(Id_Producto,Id_insumo,Cantidad,Fecha_Gasto)
-values(7,7,18,'2017/01/03');
 
-insert into Producto_Insumo(Id_Producto,Id_insumo,Cantidad,Fecha_Gasto)
-values(2,7,22,'2017/04/01');
-
-insert into Producto_Insumo(Id_Producto,Id_insumo,Cantidad,Fecha_Gasto)
-values(2,6,21,'2017/04/01');
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
- PD: Solo puse los que necesitaba, no todos los que debería haber
-///////DATOS TABLA QUEJA_RECLAMOS///////////////////////////////////////////////////////////////////////////////////////
-INSERT INTO Queja_Reclamos(Id_queja_reclamo,Id_producto,Id_pedido,Fecha_queja,Estado_queja,Fecha_solucion,Descripcion)
-	VALUES(1,7,2,'2017/03/13','Cerrado','2017/03/20','La salchica estaba rancia');
-INSERT INTO Queja_Reclamos(Id_queja_reclamo,Id_producto,Id_pedido,Fecha_queja,Estado_queja,Fecha_solucion,Descripcion)
-	VALUES(2,2,4,'2017/03/13','Cerrado','2017/03/20','El huevo estaba podrido');
-INSERT INTO Queja_Reclamos(Id_queja_reclamo,Id_producto,Id_pedido,Fecha_queja,Estado_queja,Fecha_solucion,Descripcion)
-	VALUES(3,7,4,'2017/03/13','Cerrado','2017/03/20','El perro tenia un pelo');
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 
