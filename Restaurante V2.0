@@ -150,7 +150,7 @@ CREATE TABLE Queja_Reclamos(
 
 CREATE TABLE Factura(
 	Id_factura int UNSIGNED NOT NULL,
-	Id_cliente int UNSIGENED NOT NULL,
+	Id_cliente int UNSIGNED NOT NULL,
 	
 	Id_pedido int UNSIGNED NOT NULL,
 	Id_metodo_pago int UNSIGNED NOT NULL,
@@ -178,8 +178,10 @@ CREATE TABLE Mesa(
 
 CREATE TABLE Mesa_Cliente(
 	id_mesa_cliente int UNSIGNED NOT NULL PRIMARY KEY,
-	Id_mesa int UNSIGNED NOT NULL,
+	
 	Id_cliente int UNSIGNED NOT NULL,
+	Id_mesa int UNSIGNED NOT NULL,
+	Fecha_uso datetime,
 	FOREIGN KEY (Id_mesa) REFERENCES Mesa(Id_mesa) ON DELETE CASCADE ON UPDATE CASCADE,
 	FOREIGN KEY (Id_cliente) REFERENCES Cliente(Id_cliente) ON DELETE CASCADE ON UPDATE CASCADE
 
