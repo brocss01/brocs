@@ -117,13 +117,15 @@ CREATE TABLE Cliente(
 
 CREATE TABLE Queja_Reclamos(
 	Id_queja_reclamo int UNSIGNED NOT NULL PRIMARY KEY,
-	Id_cliente int UNSIGNED,
+	Id_producto int UNSIGNED NOT NULL,
+	Id_pedido int UNSIGNED NOT NULL,
 	Fecha_queja datetime NOT NULL,
 	Estado_queja varchar(20) NOT NULL,
 	Fecha_solucion datetime,
 	Descripcion varchar(200) NOT NULL,
-	FOREIGN KEY  (Id_cliente) REFERENCES Cliente(Id_cliente) ON DELETE SET NULL ON UPDATE CASCADE
 
+	FOREIGN KEY  (Id_pedido) REFERENCES Producto_Pedido(Id_pedido) ,
+	FOREIGN KEY  (Id_producto) REFERENCES Producto_Pedido(Id_producto) 
 
 )ENGINE=INNODB;
 
