@@ -150,6 +150,7 @@ CREATE TABLE Queja_Reclamos(
 
 CREATE TABLE Factura(
 	Id_factura int UNSIGNED NOT NULL,
+	Id_cliente int UNSIGENED NOT NULL,
 	
 	Id_pedido int UNSIGNED NOT NULL,
 	Id_metodo_pago int UNSIGNED NOT NULL,
@@ -160,7 +161,8 @@ CREATE TABLE Factura(
 
 	Precio_total float UNSIGNED NOT NULL,
 
-	PRIMARY KEY (Id_factura),
+	PRIMARY KEY (Id_factura,Id_cliente),
+	FOREIGN KEY (Id_cliente) REFERENCES Cliente(Id_cliente),
 	FOREIGN KEY (Id_metodo_pago) REFERENCES Metodo_pago(Id_metodo_pago) ON DELETE CASCADE ON UPDATE CASCADE,
 	FOREIGN KEY (Id_pedido) REFERENCES Producto_Pedido(Id_pedido) ON DELETE CASCADE ON UPDATE CASCADE
 
