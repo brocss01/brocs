@@ -25,15 +25,6 @@ insert into cliente(Id_cliente,Nombre_cliente,Apellidos_cliente,
 	'Castro Ortiz','1983/09/16',3015674523,'F','Calle 8 12-89');
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-///////DATOS TABLA QUEJA_RECLAMOS///////////////////////////////////////////////////////////////////////////////////////
-INSERT INTO Queja_Reclamos(Id_queja_reclamo,Id_producto,Id_pedido,Fecha_queja,Estado_queja,Fecha_solucion,Descripcion)
-	VALUES(1,7,2,'2017/03/13','Cerrado','2017/03/20','La salchica estaba rancia');
-INSERT INTO Queja_Reclamos(Id_queja_reclamo,Id_producto,Id_pedido,Fecha_queja,Estado_queja,Fecha_solucion,Descripcion)
-	VALUES(2,2,4,'2017/03/13','Cerrado','2017/03/20','El huevo estaba podrido');
-INSERT INTO Queja_Reclamos(Id_queja_reclamo,Id_producto,Id_pedido,Fecha_queja,Estado_queja,Fecha_solucion,Descripcion)
-	VALUES(3,7,4,'2017/03/13','Cerrado','2017/03/20','El perro tenia un pelo');
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
 ///////DATO TABLA RESTAURANTE////////////////////////////////////////////////////////////////////////////////////////////
 INSERT INTO Restaurante (Id_Restaurante, Nombre_Restaurante,Direccion,Telefono)
 	VALUES (1,"Restaurante-Bar BROCS","Carrera 14d bis 7-64",3183367880);
@@ -306,7 +297,17 @@ values(2,7,22,'2017/04/01');
 insert into Producto_Insumo(Id_Producto,Id_insumo,Cantidad,Fecha_Gasto)
 values(2,6,21,'2017/04/01');
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
- 
-PD: Solo puse los que necesitaba, no todos los que debería haber
+ PD: Solo puse los que necesitaba, no todos los que debería haber
+///////DATOS TABLA QUEJA_RECLAMOS///////////////////////////////////////////////////////////////////////////////////////
+INSERT INTO Queja_Reclamos(Id_queja_reclamo,Id_producto,Id_pedido,Fecha_queja,Estado_queja,Fecha_solucion,Descripcion)
+	VALUES(1,7,2,'2017/03/13','Cerrado','2017/03/20','La salchica estaba rancia');
+INSERT INTO Queja_Reclamos(Id_queja_reclamo,Id_producto,Id_pedido,Fecha_queja,Estado_queja,Fecha_solucion,Descripcion)
+	VALUES(2,2,4,'2017/03/13','Cerrado','2017/03/20','El huevo estaba podrido');
+INSERT INTO Queja_Reclamos(Id_queja_reclamo,Id_producto,Id_pedido,Fecha_queja,Estado_queja,Fecha_solucion,Descripcion)
+	VALUES(3,7,4,'2017/03/13','Cerrado','2017/03/20','El perro tenia un pelo');
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
 
 
