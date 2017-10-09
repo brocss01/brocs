@@ -174,6 +174,8 @@ insert into Producto_Pedido(Id_pedido,Id_producto,cantidad) values(04,01,1);
 
 insert into Producto_Pedido(Id_pedido,Id_producto,cantidad) values(05,06,10);
 
+insert into Producto_Pedido(Id_pedido,Id_producto,cantidad) values(05,03,10);
+
 insert into Producto_Pedido(Id_pedido,Id_producto,cantidad) values(06,02,2);
 
 insert into Producto_Pedido(Id_pedido,Id_producto,cantidad) values(06,03,6);
