@@ -162,7 +162,7 @@ CREATE TABLE Factura(
 	Precio_total float UNSIGNED NOT NULL,
 
 	PRIMARY KEY (Id_factura,Id_cliente),
-	FOREIGN KEY (Id_cliente) REFERENCES Cliente(Id_cliente),
+	FOREIGN KEY (Id_cliente) REFERENCES Cliente(Id_cliente) ON DELETE CASCADE ON UPDATE CASCADE,
 	FOREIGN KEY (Id_metodo_pago) REFERENCES Metodo_pago(Id_metodo_pago) ON DELETE CASCADE ON UPDATE CASCADE,
 	FOREIGN KEY (Id_pedido) REFERENCES Producto_Pedido(Id_pedido) ON DELETE CASCADE ON UPDATE CASCADE
 
