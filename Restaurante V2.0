@@ -28,7 +28,8 @@ CREATE TABLE Insumo(
 	Unidades_stock float UNSIGNED NOT NULL DEFAULT 0,
 	Unidades_gastadas float UNSIGNED NOT NULL DEFAULT 0,
 	Precio_insumo float UNSIGNED NOT NULL,
-	Direccion_imagen varchar(100)
+	Direccion_imagen varchar(100),
+	Fecha_caducidad date not null
 );
 
 
