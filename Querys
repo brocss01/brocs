@@ -198,8 +198,29 @@ SELECT M.Ubicacion, CL.Genero,
 						)
 ;
 
-2)
+2)Consulta que me muestre los insumos junto con los productos que se fabrican con esos insumos en donde se debe especificar la
+cantidad en Stock de los insumos y productos con las fechas de caducidad pero solo seleccionando aquellos productos que estan proximos a 
+caducir que superan la cantidad de dias de la siguiente fecha en la cual vence un producto y finalmente indicar cual fue el proveedor
 
+
+SELECT I.Nombre_insumo,I.Unidades_stock,I.Fecha_Caducidad,P.Nombre_producto,P.Unidades_stock,
+	PV.Nombre_proveedor 
+	FROM Insumo I LEFT OUTER JOIN Insumo_Proveedor IP ON IP.Id_insumo = I.Id_insumo
+	INNER JOIN Proveedor PV ON PV.Id_proveedor = IP.Id_proveedor
+	INNER JOIN Producto_Insumo PI ON PI.Id_insumo = IP.Id_insumo
+	INNER JOIN Producto P ON P.Id_producto = PI.Id_producto
+	WHERE 
+	(SELECT DATEDIFF(CURDATE(),I.Fecha_Caducidad)) < 
+
+		(SELECT DATEDIFF(CURDATE(),
+		(SELECT MIN(SI.Fecha_Caducidad) FROM Insumo SI LEFT OUTER JOIN Insumo_Proveedor SIP ON SIP.Id_insumo = SI.Id_insumo
+			WHERE SI.Fecha_Caducidad > CURDATE()
+		 )
+		)
+		)
+		GROUP BY I.Fecha_Caducidad HAVING MONTH(I.Fecha_Caducidad) <> 08
+	ORDER BY I.Unidades_stock 
+	;
 
 
 
