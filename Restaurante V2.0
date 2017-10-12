@@ -118,6 +118,8 @@ CREATE TABLE Producto_Insumo(
 
 CREATE TABLE Cliente(
 	Id_cliente int UNSIGNED NOT NULL PRIMARY KEY,
+	Codigo int UNSIGNED UNIQUE,
+	Password varchar(50), 
 	Nombre_cliente varchar(50) NOT NULL,
 	Apellidos_cliente varchar(50) NOT NULL,
 	Fecha_Nacimiento date NOT NULL,
