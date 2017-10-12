@@ -6,19 +6,21 @@ CREATE TABLE Restaurante(
 	Id_Restaurante int UNSIGNED NOT NULL PRIMARY KEY,
 	Nombre_Restaurante varchar(50) NOT NULL,
 	Direccion varchar(50) NOT NULL,
-	Telefono bigint(15) UNSIGNED NOT NULL
+	Telefono varchar(15) NOT NULL
 );
 
 CREATE TABLE Metodo_pago(
 	Id_metodo_pago int UNSIGNED NOT NULL PRIMARY KEY,
-	Nombre_metodo varchar(80) NOT NULL
+	Nombre_metodo varchar(80) NOT NULL,
+	Descripcion varchar(200)
 );
 
 CREATE TABLE Proveedor(
 	Id_proveedor int UNSIGNED NOT NULL PRIMARY KEY,
 	Nombre_proveedor varchar(80) NOT NULL,
-	Telefono bigint(15) UNSIGNED NOT NULL,
-	Descripcion varchar(200) NOT NULL
+	Telefono varchar(15) NOT NULL,
+	Descripcion varchar(200) NOT NULL,
+	Direccion varchar(100) NOT NULL
 
 );
 	
@@ -29,13 +31,21 @@ CREATE TABLE Insumo(
 	Unidades_gastadas float UNSIGNED NOT NULL DEFAULT 0,
 	Precio_insumo float UNSIGNED NOT NULL,
 	Direccion_imagen varchar(100),
-	Fecha_caducidad date not null
+	Fecha_caducidad date not null,
+	Descripcion varchar(200) not null
 );
 
+#Ejemplos procedures que me almacena un procedimiento que puedo llamar despues desde netbeans o donde sea
+create procedure listarInsumos()
+select I.Id_insumo,I.nombre_insumo from Insumo I order by I.Id_insumo;
+#llamar procedure
+call listarInsumos;
 
 CREATE TABLE Insumo_Proveedor(
 	Id_insumo int UNSIGNED NOT NULL,
 	Id_proveedor int UNSIGNED NOT NULL,
+	Cantidad double UNSIGNED NOT NULL,
+	FechaEntrega date NOT NULL,
 	PRIMARY KEY(Id_proveedor, Id_insumo),
 	FOREIGN KEY (Id_insumo) REFERENCES Insumo(Id_insumo) ON DELETE CASCADE ON UPDATE CASCADE,
 	FOREIGN KEY (Id_proveedor) REFERENCES Proveedor(Id_proveedor) ON DELETE CASCADE ON UPDATE CASCADE
@@ -84,7 +94,7 @@ CREATE TABLE Producto(
 	Id_tipo_producto int UNSIGNED NOT NULL,
 
 	Nombre_producto varchar(80) NOT NULL,
-	Precio float UNSIGNED NOT NULL,
+	Precio double UNSIGNED NOT NULL,
 	Descripcion varchar(200) NOT NULL,
 	Unidades_stock int UNSIGNED NOT NULL DEFAULT 0,
 	Unidades_Vendidas int UNSIGNED NOT NULL DEFAULT 0,
@@ -111,9 +121,10 @@ CREATE TABLE Cliente(
 	Nombre_cliente varchar(50) NOT NULL,
 	Apellidos_cliente varchar(50) NOT NULL,
 	Fecha_Nacimiento date NOT NULL,
-	Telefono int UNSIGNED NOT NULL,
+	Telefono varchar(15) NOT NULL,
 	Genero char(1) NOT NULL,
-	Direccion varchar(80) NOT NULL
+	Direccion varchar(80) NOT NULL,
+	DireccionImagen varchar(100)
 );
 
 CREATE TABLE Pedido(
@@ -128,7 +139,7 @@ CREATE TABLE Pedido(
 CREATE TABLE Producto_Pedido(
 	Id_producto int UNSIGNED NOT NULL,
 	Id_pedido int UNSIGNED NOT NULL,
-	Cantidad int UNSIGNED NOT NULL,
+	Cantidad float UNSIGNED NOT NULL,
 	PRIMARY KEY(Id_producto, Id_pedido),
 	FOREIGN KEY(Id_producto) REFERENCES Producto(Id_producto) ON DELETE CASCADE ON UPDATE CASCADE,
 	FOREIGN KEY(Id_pedido) REFERENCES Pedido(Id_pedido) ON DELETE CASCADE ON UPDATE CASCADE
