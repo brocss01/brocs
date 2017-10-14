@@ -99,6 +99,7 @@ CREATE TABLE Producto(
 	Unidades_stock int UNSIGNED NOT NULL DEFAULT 0,
 	Unidades_Vendidas int UNSIGNED NOT NULL DEFAULT 0,
 	Fecha_Caducidad date,
+	Dir_imagen varchar(100) not null,
 	FOREIGN KEY (Id_Restaurante) REFERENCES Restaurante(Id_Restaurante) ON DELETE CASCADE ON UPDATE CASCADE,
 	FOREIGN KEY (Id_tipo_producto) REFERENCES Tipo_producto(Id_tipo_producto) ON DELETE CASCADE ON UPDATE CASCADE
 
