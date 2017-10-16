@@ -69,11 +69,14 @@ CREATE TABLE Empleado(
 	Apellido varchar(50) NOT NULL,
 	Fecha_Nacimiento date NOT NULL,
 	Direccion varchar(100) NOT NULL,
-	Telefono int UNSIGNED NOT NULL,
+	Telefono varchar(15) NOT NULL,
 	Email varchar(100) NOT NULL,
 	Salario float UNSIGNED NOT NULL,
 	Documento int UNSIGNED NOT NULL,
 	Genero char(1) NOT NULL,
+	Codigo int NOT NULL,
+	Password varchar(50) NOT NULL,
+	Dir_Imagen varchar(100),
 	FOREIGN KEY (Id_Cargo) REFERENCES Cargo(Id_Cargo) ON DELETE SET NULL ON UPDATE CASCADE,
 	FOREIGN KEY (Id_Restaurante) REFERENCES Restaurante(Id_Restaurante) ON DELETE CASCADE ON UPDATE CASCADE
 	
