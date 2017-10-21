@@ -37,60 +37,60 @@ values(7,'avicola colombiana sas',3112423435,  'avicola','Calle norte');
 
 ///// DATOS TABLA INSUMOS///////////////////////////////////////////////////////////////////////////////////////////////
 
-insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo,fecha_caducidad,descripcion)
-values(1,'gaseosa',400,1100,'2017/11/01',' ');
+insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo,Nombre_imagen,fecha_caducidad,descripcion)
+values(1,'gaseosa',400,1100,'    ','2017/11/01',' ');
 
 
-insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo,fecha_caducidad,descripcion)
-values(2,'arroz', 50, 2900,'2017/11/01',' ');
+insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo,Nombre_imagen,fecha_caducidad,descripcion)
+values(2,'arroz', 50, 2900,'    ','2017/11/01',' ');
 
-insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo,fecha_caducidad,descripcion)
-values(3,'sal', 50, 1000,'2017/10/01',' ');
-
-
-insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo,fecha_caducidad,descripcion)
-values(4, 'ternera', 100,14300,'2017/01/01',' ');
-
-insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo,fecha_caducidad,descripcion)
-values(5,'cerveza',100,1500,'2017/12/01',' ');
+insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo,Nombre_imagen,fecha_caducidad,descripcion)
+values(3,'sal', 50, 1000,'    ','2017/10/01',' ');
 
 
-insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo,fecha_caducidad,descripcion)
-values(6, 'huevo',120,300,'2017/03/01',' ');
+insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo,Nombre_imagen,fecha_caducidad,descripcion)
+values(4, 'ternera', 100,14300,'    ','2017/01/01',' ');
+
+insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo,Nombre_imagen,fecha_caducidad,descripcion)
+values(5,'cerveza',100,1500,'    ','2017/12/01',' ');
 
 
-insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo,fecha_caducidad,descripcion)
-values(7, 'salchichas', 300,1000,'2019/11/01',' ');
+insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo,Nombre_imagen,fecha_caducidad,descripcion)
+values(6, 'huevo',120,300,'    ','2017/03/01',' ');
 
 
-insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo,fecha_caducidad,descripcion)
-values(8, 'Pasta', 38,1000,'2020/11/01',' ');
+insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo,Nombre_imagen,fecha_caducidad,descripcion)
+values(7, 'salchichas', 300,1000,'    ','2019/11/01',' ');
+
+
+insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo,Nombre_imagen,fecha_caducidad,descripcion)
+values(8, 'Pasta', 38,1000,'    ','2020/11/01',' ');
 --
 
-insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo,fecha_caducidad,descripcion)
-values(9, 'Aceite', 38,1000,'2019/11/30',' ');
+insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo,Nombre_imagen,fecha_caducidad,descripcion)
+values(9, 'Aceite', 38,1000,'    ','2019/11/30',' ');
 
 
-insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo,fecha_caducidad,descripcion)
-values(10, 'Salsas', 38,1000,'2019/07/24',' ');
+insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo,Nombre_imagen,fecha_caducidad,descripcion)
+values(10, 'Salsas', 38,1000,'    ','2019/07/24',' ');
 
-insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo,fecha_caducidad,descripcion)
-values(11, 'Picante', 38,1000,'2019/07/01',' ');
+insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo,Nombre_imagen,fecha_caducidad,descripcion)
+values(11, 'Picante', 38,1000,'    ','2019/07/01',' ');
 
-insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo,fecha_caducidad,descripcion)
-values(12, 'Azucar', 38,1000,'2019/08/01',' ');
+insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo,Nombre_imagen,fecha_caducidad,descripcion)
+values(12, 'Azucar', 38,1000,'    ','2019/08/01',' ');
 
-insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo,fecha_caducidad,descripcion)
-values(13, 'Mantequilla', 38,1000,'2020/08/01',' ');
+insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo,Nombre_imagen,fecha_caducidad,descripcion)
+values(13, 'Mantequilla', 38,1000,'    ','2020/08/01',' ');
 
-insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo,fecha_caducidad,descripcion)
-values(14, 'Cebolla', 38,1000,'2017/08/30',' ');
+insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo,Nombre_imagen,fecha_caducidad,descripcion)
+values(14, 'Cebolla', 38,1000,'    ','2017/08/30',' ');
 
-insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo,fecha_caducidad,descripcion)
-values(15, 'Tomate', 38,1000,'2019/08/01',' ');
+insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo,Nombre_imagen,fecha_caducidad,descripcion)
+values(15, 'Tomate', 38,1000,'    ','2019/08/01',' ');
 
-insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo,fecha_caducidad,descripcion)
-values(16, 'Leche', 38,1000,'2019/08/01',' ');
+insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo,Nombre_imagen,fecha_caducidad,descripcion)
+values(16, 'Leche', 38,1000,    ,'2019/08/01',' ');
 
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -192,68 +192,68 @@ values(2,6,21,'2017/04/01');
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 /////////DATOS TABLA CLIENTE///////////////////////////////////////////////////////////////////////////////////////////
-insert into cliente(Id_cliente,Nombre_cliente,Apellidos_cliente,
-	Fecha_Nacimiento,Telefono,Genero,Direccion) values(990618006,
+insert into cliente(Id_cliente,Codigo,Password,Nombre_cliente,Apellidos_cliente,
+	Fecha_Nacimiento,Telefono,Genero,Direccion) values(990618006,1,'aaaa',
 	'Sebastian','Garzon','1999/06/18',3142337375,'M','Diagonal 14#20-12');
 
-insert into cliente(Id_cliente,Nombre_cliente,Apellidos_cliente,
-	Fecha_Nacimiento,Telefono,Genero,Direccion) values(1075688998,'Juan Carlos',
+insert into cliente(Id_cliente,Codigo,Password,Nombre_cliente,Apellidos_cliente,
+	Fecha_Nacimiento,Telefono,Genero,Direccion) values(1075688998,2,'aa','Juan Carlos',
 	'Robayo Perez','1980/11/23',3123451254,'M','CRA 7A 45-12');
 
-insert into cliente(Id_cliente,Nombre_cliente,Apellidos_cliente,
-	Fecha_Nacimiento,Telefono,Genero,Direccion) values(1789654342,'Maria Camila',
+insert into cliente(Id_cliente,Codigo,Password,Nombre_cliente,Apellidos_cliente,
+	Fecha_Nacimiento,Telefono,Genero,Direccion) values(1789654342,3,'aaaab','Maria Camila',
 	'Suarez Gomez','1995/01/10',3152435612,'F','Cra 1B #78-01');
 
-insert into cliente(Id_cliente,Nombre_cliente,Apellidos_cliente,
-	Fecha_Nacimiento,Telefono,Genero,Direccion) values(112657542,'Karen',
+insert into cliente(Id_cliente,Codigo,Password,Nombre_cliente,Apellidos_cliente,
+	Fecha_Nacimiento,Telefono,Genero,Direccion) values(112657542,4,'aaaac','Karen',
 	'Castro Ortiz','1983/09/16',3015674523,'F','Calle 8 12-89');
 	
-insert into cliente(Id_cliente,Nombre_cliente,Apellidos_cliente,
-	Fecha_Nacimiento,Telefono,Genero,Direccion) values(122,'Robinson',
+insert into cliente(Id_cliente,Codigo,Password,Nombre_cliente,Apellidos_cliente,
+	Fecha_Nacimiento,Telefono,Genero,Direccion) values(122,5,'aaaad','Robinson',
 	'Muñoz','1998/07/24',3015674523,'M','Calle 8 12-89');
 
-insert into cliente(Id_cliente,Nombre_cliente,Apellidos_cliente,
-	Fecha_Nacimiento,Telefono,Genero,Direccion) values(1,'Dario',
+insert into cliente(Id_cliente,Codigo,Password,Nombre_cliente,Apellidos_cliente,
+	Fecha_Nacimiento,Telefono,Genero,Direccion) values(1,6,'aaaae','Dario',
 	'Muñoz','1998/07/24',3015674523,'M','Calle 8 12-89');
 
-insert into cliente(Id_cliente,Nombre_cliente,Apellidos_cliente,
-	Fecha_Nacimiento,Telefono,Genero,Direccion) values(2,'Oscar',
+insert into cliente(Id_cliente,Codigo,Password,Nombre_cliente,Apellidos_cliente,
+	Fecha_Nacimiento,Telefono,Genero,Direccion) values(2,7,'aaaaf','Oscar',
 	'Muñoz','1998/07/24',3015674523,'M','Calle 8 12-89');
 
-insert into cliente(Id_cliente,Nombre_cliente,Apellidos_cliente,
-	Fecha_Nacimiento,Telefono,Genero,Direccion) values(3,'Daniela',
+insert into cliente(Id_cliente,Codigo,Password,Nombre_cliente,Apellidos_cliente,
+	Fecha_Nacimiento,Telefono,Genero,Direccion) values(3,8,'aaaag','Daniela',
 	'Muñoz','1998/07/24',3015674523,'F','Calle 8 12-89');
 
-insert into cliente(Id_cliente,Nombre_cliente,Apellidos_cliente,
-	Fecha_Nacimiento,Telefono,Genero,Direccion) values(4,'Ruben',
+insert into cliente(Id_cliente,Codigo,Password,Nombre_cliente,Apellidos_cliente,
+	Fecha_Nacimiento,Telefono,Genero,Direccion) values(4,9,'aaaah','Ruben',
 	'Muñoz','1998/07/24',3015674523,'M','Calle 8 12-89');
 
-insert into cliente(Id_cliente,Nombre_cliente,Apellidos_cliente,
-	Fecha_Nacimiento,Telefono,Genero,Direccion) values(5,'Ana Jarieth',
+insert into cliente(Id_cliente,Codigo,Password,Nombre_cliente,Apellidos_cliente,
+	Fecha_Nacimiento,Telefono,Genero,Direccion) values(5,10,'aaaaj','Ana Jarieth',
 	'Hernandez','2002/03/13',3015674523,'F','Calle 8 12-89');
 
-insert into cliente(Id_cliente,Nombre_cliente,Apellidos_cliente,
-	Fecha_Nacimiento,Telefono,Genero,Direccion) values(6,'Natalia',
+insert into cliente(Id_cliente,Codigo,Password,Nombre_cliente,Apellidos_cliente,
+	Fecha_Nacimiento,Telefono,Genero,Direccion) values(6,11,'aaaak','Natalia',
 	'Rodriguez','2002/03/13',3015674523,'F','Calle 8 12-89');
 
-insert into cliente(Id_cliente,Nombre_cliente,Apellidos_cliente,
-	Fecha_Nacimiento,Telefono,Genero,Direccion) values(7,'Cristel',
+insert into cliente(Id_cliente,Codigo,Password,Nombre_cliente,Apellidos_cliente,
+	Fecha_Nacimiento,Telefono,Genero,Direccion) values(7,12,'aaaal','Cristel',
 	'Muñoz','2002/03/13',3015674523,'F','Calle 8 12-89');
 
-insert into cliente(Id_cliente,Nombre_cliente,Apellidos_cliente,
-	Fecha_Nacimiento,Telefono,Genero,Direccion) values(8,'Adriana',
+insert into cliente(Id_cliente,Codigo,Password,Nombre_cliente,Apellidos_cliente,
+	Fecha_Nacimiento,Telefono,Genero,Direccion) values(8,13,'aaaam','Adriana',
 	'Navia','2002/03/13',3015674523,'F','Calle 8 12-89');
 
-insert into cliente(Id_cliente,Nombre_cliente,Apellidos_cliente,
-	Fecha_Nacimiento,Telefono,Genero,Direccion) values(9,'Magaly',
+insert into cliente(Id_cliente,Codigo,Password,Nombre_cliente,Apellidos_cliente,
+	Fecha_Nacimiento,Telefono,Genero,Direccion) values(9,14,'aaaan','Magaly',
 	'Arogote','1999/03/13',3015674523,'F','Calle 8 12-89');
 
-insert into cliente(Id_cliente,Nombre_cliente,Apellidos_cliente,
-	Fecha_Nacimiento,Telefono,Genero,Direccion) values(10,'Valentina',
+insert into cliente(Id_cliente,Codigo,Password,Nombre_cliente,Apellidos_cliente,
+	Fecha_Nacimiento,Telefono,Genero,Direccion) values(10,15,'aaaaq','Valentina',
 	'Trjillo','2002/03/13',3015674523,'F','Calle 8 12-89');
 
-insert into cliente(Id_cliente,Nombre_cliente,Apellidos_cliente,
-	Fecha_Nacimiento,Telefono,Genero,Direccion) values(11,'Samanta',
+insert into cliente(Id_cliente,Codigo,Password,Nombre_cliente,Apellidos_cliente,
+	Fecha_Nacimiento,Telefono,Genero,Direccion) values(11,16,'aaaav','Samanta',
 	'Noise','2002/03/13',3015674523,'F','Calle 8 12-89');	
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
