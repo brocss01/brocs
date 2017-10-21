@@ -12,85 +12,85 @@ INSERT INTO Metodo_pago (Id_metodo_pago, Nombre_metodo) VALUES (3,"Tarjeta de d√
 
 /////////////TABLA PROVEEDOR//////////////////////////////////////////////////////////////////////////////////////
 
-insert into proveedor(id_proveedor,Nombre_proveedor, telefono, descripcion)
-values(1,'Postobon',3165748390,'fabricante y distribuidora de bebidas gaseosas');
+insert into proveedor(id_proveedor,Nombre_proveedor, telefono, descripcion,direccion)
+values(1,'Postobon',3165748390,'fabricante y distribuidora de bebidas gaseosas','Cll 53');
 
-insert into proveedor(id_proveedor,Nombre_proveedor, telefono, descripcion)
-values(2,'Coca Cola', 4567968,'fabricante y distribuidora de bebidas gaseosas');
+insert into proveedor(id_proveedor,Nombre_proveedor, telefono, descripcion,direccion)
+values(2,'Coca Cola', 4567968,'fabricante y distribuidora de bebidas gaseosas','Call 54 xd');
 
-insert into proveedor(id_proveedor,Nombre_proveedor, telefono, descripcion)
-values(3,'florhuila',3156473838,'dsitribuidora de arroz');
+insert into proveedor(id_proveedor,Nombre_proveedor, telefono, descripcion,direccion)
+values(3,'florhuila',3156473838,'dsitribuidora de arroz','Crr 13');
 
-insert into proveedor(id_proveedor,Nombre_proveedor, telefono, descripcion)
-values(4,'refisal',8576869,'empresa salinizadora');
+insert into proveedor(id_proveedor,Nombre_proveedor, telefono, descripcion,direccion)
+values(4,'refisal',8576869,'empresa salinizadora','Avenida 14');
 
-insert into proveedor(id_proveedor,Nombre_proveedor, telefono, descripcion)
-values(5, 'Zenu', 8586769,'empacadora de carnes frias');
+insert into proveedor(id_proveedor,Nombre_proveedor, telefono, descripcion,direccion)
+values(5, 'Zenu', 8586769,'empacadora de carnes frias','40-39');
 
-insert into proveedor(id_proveedor,Nombre_proveedor, telefono, descripcion)
-values(6,'Bavaria',3123453434, ' cerveceria');
+insert into proveedor(id_proveedor,Nombre_proveedor, telefono, descripcion,direccion)
+values(6,'Bavaria',3123453434, ' cerveceria','Calle sur');
 
-insert into proveedor(id_proveedor,Nombre_proveedor, telefono, descripcion)
-values(7,'avicola colombiana sas',3112423435,  'avicola');
+insert into proveedor(id_proveedor,Nombre_proveedor, telefono, descripcion,direccion)
+values(7,'avicola colombiana sas',3112423435,  'avicola','Calle norte');
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 ///// DATOS TABLA INSUMOS///////////////////////////////////////////////////////////////////////////////////////////////
 
-insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo,fecha_caducidad)
-values(1,'gaseosa',400,1100,'2017/11/01');
+insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo,fecha_caducidad,descripcion)
+values(1,'gaseosa',400,1100,'2017/11/01',' ');
 
 
-insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo,fecha_caducidad)
-values(2,'arroz', 50, 2900,'2017/11/01');
+insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo,fecha_caducidad,descripcion)
+values(2,'arroz', 50, 2900,'2017/11/01',' ');
 
-insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo,fecha_caducidad)
-values(3,'sal', 50, 1000,'2017/10/01');
-
-
-insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo,fecha_caducidad)
-values(4, 'ternera', 100,14300,'2017/01/01');
-
-insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo,fecha_caducidad)
-values(5,'cerveza',100,1500,'2017/12/01');
+insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo,fecha_caducidad,descripcion)
+values(3,'sal', 50, 1000,'2017/10/01',' ');
 
 
-insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo,fecha_caducidad)
-values(6, 'huevo',120,300,'2017/03/01');
+insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo,fecha_caducidad,descripcion)
+values(4, 'ternera', 100,14300,'2017/01/01',' ');
+
+insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo,fecha_caducidad,descripcion)
+values(5,'cerveza',100,1500,'2017/12/01',' ');
 
 
-insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo,fecha_caducidad)
-values(7, 'salchichas', 300,1000,'2019/11/01');
+insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo,fecha_caducidad,descripcion)
+values(6, 'huevo',120,300,'2017/03/01',' ');
 
 
-insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo,fecha_caducidad)
-values(8, 'Pasta', 38,1000,'2020/11/01');
+insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo,fecha_caducidad,descripcion)
+values(7, 'salchichas', 300,1000,'2019/11/01',' ');
+
+
+insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo,fecha_caducidad,descripcion)
+values(8, 'Pasta', 38,1000,'2020/11/01',' ');
 --
 
-insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo,fecha_caducidad)
-values(9, 'Aceite', 38,1000,'2019/11/30');
+insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo,fecha_caducidad,descripcion)
+values(9, 'Aceite', 38,1000,'2019/11/30',' ');
 
 
-insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo,fecha_caducidad)
-values(10, 'Salsas', 38,1000,'2019/07/24');
+insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo,fecha_caducidad,descripcion)
+values(10, 'Salsas', 38,1000,'2019/07/24',' ');
 
-insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo,fecha_caducidad)
-values(11, 'Picante', 38,1000,'2019/07/01');
+insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo,fecha_caducidad,descripcion)
+values(11, 'Picante', 38,1000,'2019/07/01',' ');
 
-insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo,fecha_caducidad)
-values(12, 'Azucar', 38,1000,'2019/08/01');
+insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo,fecha_caducidad,descripcion)
+values(12, 'Azucar', 38,1000,'2019/08/01',' ');
 
-insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo,fecha_caducidad)
-values(13, 'Mantequilla', 38,1000,'2020/08/01');
+insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo,fecha_caducidad,descripcion)
+values(13, 'Mantequilla', 38,1000,'2020/08/01',' ');
 
-insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo,fecha_caducidad)
-values(14, 'Cebolla', 38,1000,'2017/08/30');
+insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo,fecha_caducidad,descripcion)
+values(14, 'Cebolla', 38,1000,'2017/08/30',' ');
 
-insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo,fecha_caducidad)
-values(15, 'Tomate', 38,1000,'2019/08/01');
+insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo,fecha_caducidad,descripcion)
+values(15, 'Tomate', 38,1000,'2019/08/01',' ');
 
-insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo,fecha_caducidad)
-values(16, 'Leche', 38,1000,'2019/08/01');
+insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo,fecha_caducidad,descripcion)
+values(16, 'Leche', 38,1000,'2019/08/01',' ');
 
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -99,29 +99,29 @@ values(16, 'Leche', 38,1000,'2019/08/01');
 
 //////////////////TABLA INSUMO_PROVEEDOR/////////////////////////////////////////////////////////////////////////////
 
-insert into Insumo_Proveedor(Id_insumo,Id_proveedor)
-values(1,1);
+insert into Insumo_Proveedor(Id_insumo,Id_proveedor,cantidad,fechaentrega)
+values(1,1,2,'2017/08/01');
 
-insert into Insumo_Proveedor(Id_insumo,Id_proveedor)
-values(1,2);
+insert into Insumo_Proveedor(Id_insumo,Id_proveedor,cantidad,fechaentrega)
+values(1,2,3,'2017/08/01');
 
-insert into Insumo_Proveedor(Id_insumo,Id_proveedor)
-values(2,3);
+insert into Insumo_Proveedor(Id_insumo,Id_proveedor,cantidad,fechaentrega)
+values(2,3,1,'2017/08/01');
 
-insert into Insumo_Proveedor(Id_insumo,Id_proveedor)
-values(3,4);
+insert into Insumo_Proveedor(Id_insumo,Id_proveedor,cantidad,fechaentrega)
+values(3,4,5,'2017/08/01');
 
-insert into Insumo_Proveedor(Id_insumo,Id_proveedor)
-values(4,5);
+insert into Insumo_Proveedor(Id_insumo,Id_proveedor,cantidad,fechaentrega)
+values(4,5,6,'2017/08/01');
 
-insert into Insumo_Proveedor(Id_insumo,Id_proveedor)
-values(5,6);
+insert into Insumo_Proveedor(Id_insumo,Id_proveedor,cantidad,fechaentrega)
+values(5,6,3,'2017/08/01');
 
-insert into Insumo_Proveedor(Id_insumo,Id_proveedor)
-values(6,7);
+insert into Insumo_Proveedor(Id_insumo,Id_proveedor,cantidad,fechaentrega)
+values(6,7,1,'2017/08/01');
 
-insert into Insumo_Proveedor(Id_insumo,Id_proveedor)
-values(7,5);
+insert into Insumo_Proveedor(Id_insumo,Id_proveedor,cantidad,fechaentrega)
+values(7,5,3,'2017/08/01');
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -146,33 +146,33 @@ insert into Tipo_producto(Id_tipo_producto ,Nombre_tipo_producto ,Descripcion )
 
 ///// DATOS TABLA PRODUCTO///////////////////////////////////////////////////////////////////////////////////////////////
 insert into Producto(Id_producto ,Id_Restaurante ,Id_tipo_producto ,Nombre_producto,
-Precio ,Descripcion ,Unidades_stock ,Unidades_Vendidas ,Fecha_Caducidad )
-values(01,1,2,'Arroz con pollo',12000,'arroz,alverjas,pollo,salchicha',10,0,'2017/11/01');
+Precio ,Descripcion ,Unidades_stock ,Unidades_Vendidas ,Fecha_Caducidad,Nombre_imagen )
+values(01,1,2,'Arroz con pollo',12000,'arroz,alverjas,pollo,salchicha',10,0,'2017/11/01','Arroz con pollo');
 
 insert into Producto(Id_producto ,Id_Restaurante ,Id_tipo_producto ,Nombre_producto,
-Precio ,Descripcion ,Unidades_stock ,Unidades_Vendidas ,Fecha_Caducidad )
+Precio ,Descripcion ,Unidades_stock ,Unidades_Vendidas ,Fecha_Caducidad,Nombre_imagen )
 values(02,1,2,'Bandeja Paisa',16000,'Plato tipico conformado por carne, arroz, huevo,
-chicharon',9,2,'2017/11/12');
+chicharon',9,2,'2017/11/12','Bandeja Paisa');
 
 insert into Producto(Id_producto ,Id_Restaurante ,Id_tipo_producto ,Nombre_producto,
-Precio ,Descripcion ,Unidades_stock ,Unidades_Vendidas ,Fecha_Caducidad )
-values(03,1,1,'Gaseosa',2000,'Bebida gaseosa',20,10,'2018/06/18');
+Precio ,Descripcion ,Unidades_stock ,Unidades_Vendidas ,Fecha_Caducidad,Nombre_imagen )
+values(03,1,1,'Gaseosa',2000,'Bebida gaseosa',20,10,'2018/06/18','Gaseosa');
 
 insert into Producto(Id_producto ,Id_Restaurante ,Id_tipo_producto ,Nombre_producto,
-Precio ,Descripcion ,Unidades_stock ,Unidades_Vendidas ,Fecha_Caducidad )
-values(04,1,5,'Cerveza',3000,'alcohol',30,15,'2018/03/11');
+Precio ,Descripcion ,Unidades_stock ,Unidades_Vendidas ,Fecha_Caducidad,Nombre_imagen )
+values(04,1,5,'Cerveza',3000,'alcohol',30,15,'2018/03/11','Cerveza');
 
 insert into Producto(Id_producto ,Id_Restaurante ,Id_tipo_producto ,Nombre_producto,
-Precio ,Descripcion ,Unidades_stock ,Unidades_Vendidas ,Fecha_Caducidad )
-values(05,1,4,'Hamburguesa',3000,'pan, carne, jamon, queso',4,1,'2017/11/01');
+Precio ,Descripcion ,Unidades_stock ,Unidades_Vendidas ,Fecha_Caducidad,Nombre_imagen )
+values(05,1,4,'Hamburguesa',3000,'pan, carne, jamon, queso',4,1,'2017/11/01','Hamburguesa');
 
 insert into Producto(Id_producto ,Id_Restaurante ,Id_tipo_producto ,Nombre_producto,
-Precio ,Descripcion ,Unidades_stock ,Unidades_Vendidas ,Fecha_Caducidad )
-values(06,1,3,'Helado',2500,'Postre frio',10,2,'2017/10/27');
+Precio ,Descripcion ,Unidades_stock ,Unidades_Vendidas ,Fecha_Caducidad,Nombre_imagen )
+values(06,1,3,'Helado',2500,'Postre frio',10,2,'2017/10/27','Helado');
 
 insert into Producto(Id_producto ,Id_Restaurante ,Id_tipo_producto ,Nombre_producto,
-Precio ,Descripcion ,Unidades_stock ,Unidades_Vendidas ,Fecha_Caducidad )
-values(07,1,4,'Hot Dog',5500,'Comida Rapida',17,1,'2017/10/17');
+Precio ,Descripcion ,Unidades_stock ,Unidades_Vendidas ,Fecha_Caducidad,Nombre_imagen )
+values(07,1,4,'Hot Dog',5500,'Comida Rapida',17,1,'2017/10/17','Hot Dog');
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
