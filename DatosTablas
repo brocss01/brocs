@@ -147,32 +147,32 @@ insert into Tipo_producto(Id_tipo_producto ,Nombre_tipo_producto ,Descripcion )
 ///// DATOS TABLA PRODUCTO///////////////////////////////////////////////////////////////////////////////////////////////
 insert into Producto(Id_producto ,Id_Restaurante ,Id_tipo_producto ,Nombre_producto,
 Precio ,Descripcion ,Unidades_stock ,Unidades_Vendidas ,Fecha_Caducidad,Nombre_imagen )
-values(01,1,2,'Arroz con pollo',12000,'arroz,alverjas,pollo,salchicha',10,0,'2017/11/01','Arroz con pollo');
+values(01,1,2,'Arroz con pollo',12000,'arroz,alverjas,pollo,salchicha',10,0,'2017/11/01','Arroz con pollo.png');
 
 insert into Producto(Id_producto ,Id_Restaurante ,Id_tipo_producto ,Nombre_producto,
 Precio ,Descripcion ,Unidades_stock ,Unidades_Vendidas ,Fecha_Caducidad,Nombre_imagen )
 values(02,1,2,'Bandeja Paisa',16000,'Plato tipico conformado por carne, arroz, huevo,
-chicharon',9,2,'2017/11/12','Bandeja Paisa');
+chicharon',9,2,'2017/11/12','Bandeja Paisa.png');
 
 insert into Producto(Id_producto ,Id_Restaurante ,Id_tipo_producto ,Nombre_producto,
 Precio ,Descripcion ,Unidades_stock ,Unidades_Vendidas ,Fecha_Caducidad,Nombre_imagen )
-values(03,1,1,'Gaseosa',2000,'Bebida gaseosa',20,10,'2018/06/18','Gaseosa');
+values(03,1,1,'Gaseosa',2000,'Bebida gaseosa',20,10,'2018/06/18','Gaseosa.png');
 
 insert into Producto(Id_producto ,Id_Restaurante ,Id_tipo_producto ,Nombre_producto,
 Precio ,Descripcion ,Unidades_stock ,Unidades_Vendidas ,Fecha_Caducidad,Nombre_imagen )
-values(04,1,5,'Cerveza',3000,'alcohol',30,15,'2018/03/11','Cerveza');
+values(04,1,5,'Cerveza',3000,'alcohol',30,15,'2018/03/11','Cerveza.png');
 
 insert into Producto(Id_producto ,Id_Restaurante ,Id_tipo_producto ,Nombre_producto,
 Precio ,Descripcion ,Unidades_stock ,Unidades_Vendidas ,Fecha_Caducidad,Nombre_imagen )
-values(05,1,4,'Hamburguesa',3000,'pan, carne, jamon, queso',4,1,'2017/11/01','Hamburguesa');
+values(05,1,4,'Hamburguesa',3000,'pan, carne, jamon, queso',4,1,'2017/11/01','Hamburguesa.png');
 
 insert into Producto(Id_producto ,Id_Restaurante ,Id_tipo_producto ,Nombre_producto,
 Precio ,Descripcion ,Unidades_stock ,Unidades_Vendidas ,Fecha_Caducidad,Nombre_imagen )
-values(06,1,3,'Helado',2500,'Postre frio',10,2,'2017/10/27','Helado');
+values(06,1,3,'Helado',2500,'Postre frio',10,2,'2017/10/27','Helado.png');
 
 insert into Producto(Id_producto ,Id_Restaurante ,Id_tipo_producto ,Nombre_producto,
 Precio ,Descripcion ,Unidades_stock ,Unidades_Vendidas ,Fecha_Caducidad,Nombre_imagen )
-values(07,1,4,'Hot Dog',5500,'Comida Rapida',17,1,'2017/10/17','Hot Dog');
+values(07,1,4,'Hot Dog',5500,'Comida Rapida',17,1,'2017/10/17','Hot Dog.png');
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
