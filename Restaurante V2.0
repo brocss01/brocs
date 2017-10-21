@@ -130,7 +130,7 @@ CREATE TABLE Cliente(
 	Telefono varchar(15) NOT NULL,
 	Genero char(1) NOT NULL,
 	Direccion varchar(80) NOT NULL,
-	DireccionImagen varchar(100)
+	NombreImagen varchar(100)
 );
 
 CREATE TABLE Pedido(
