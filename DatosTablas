@@ -415,8 +415,8 @@ insert into Cargo(Id_Cargo,Nombre_Cargo,Descripcion)
 
 //////////////////////////////DATOS EMPLEADOS/////////////////////////////////////////////////////////////////////
 
-insert into empleado (id_empleado,id_restaurante,id_cargo,nombre_empleado,apellido,fecha_nacimiento,direccion, telefono,Email,salario,Documento,genero)
-values (1,1,1,'Mauricio','Gomez','1972-10-08','kra 189 # 83-71','3184978164','maogom@gmail.com','6000000','1080798134','M');
+insert into empleado (id_empleado,id_restaurante,id_cargo,nombre_empleado,apellido,fecha_nacimiento,direccion, telefono,Email,salario,Documento,genero,Codigo,password)
+values (1,1,1,'Mauricio','Gomez','1972-10-08','kra 189 # 83-71','3184978164','maogom@gmail.com','6000000','1080798134','M',123,'aae');
 
 insert into empleado (id_empleado,id_restaurante,id_cargo,nombre_empleado,apellido,fecha_nacimiento,direccion, telefono,Email,salario,Documento,genero)
 values (2,1,2,'Raul','Vargas','1980-12-16','kra 19 # 73-61','3105468101','raulV02@gmail.com','3500000','1020826798','M');
