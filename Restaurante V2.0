@@ -3,20 +3,20 @@ CREATE DATABASE restaurante;
 USE restaurante;
 
 CREATE TABLE Restaurante(
-	Id_Restaurante int UNSIGNED NOT NULL PRIMARY KEY,
+	Id_Restaurante int UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
 	Nombre_Restaurante varchar(50) NOT NULL,
 	Direccion varchar(50) NOT NULL,
 	Telefono varchar(15) NOT NULL
 );
 
 CREATE TABLE Metodo_pago(
-	Id_metodo_pago int UNSIGNED NOT NULL PRIMARY KEY,
+	Id_metodo_pago int UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
 	Nombre_metodo varchar(80) NOT NULL,
 	Descripcion varchar(200)
 );
 
 CREATE TABLE Proveedor(
-	Id_proveedor int UNSIGNED NOT NULL PRIMARY KEY,
+	Id_proveedor int UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
 	Nombre_proveedor varchar(80) NOT NULL,
 	Telefono varchar(15) NOT NULL,
 	Descripcion varchar(200) NOT NULL,
@@ -25,7 +25,7 @@ CREATE TABLE Proveedor(
 );
 	
 CREATE TABLE Insumo(
-	Id_insumo int UNSIGNED NOT NULL PRIMARY KEY,
+	Id_insumo int UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
 	Nombre_insumo varchar(80) NOT NULL,
 	Unidades_stock float UNSIGNED NOT NULL DEFAULT 0,
 	Unidades_gastadas float UNSIGNED NOT NULL DEFAULT 0,
@@ -53,7 +53,7 @@ CREATE TABLE Insumo_Proveedor(
 ) ENGINE=INNODB;
 
 CREATE TABLE Cargo(
-	Id_Cargo tinyint UNSIGNED NOT NULL PRIMARY KEY,
+	Id_Cargo tinyint UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
 	Nombre_Cargo varchar(20)  NOT NULL,
 	Descripcion varchar(200) NOT NULL
 
@@ -61,7 +61,7 @@ CREATE TABLE Cargo(
 
 
 CREATE TABLE Empleado(
-	Id_Empleado int UNSIGNED NOT NULL PRIMARY KEY,
+	Id_Empleado int UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
 	Id_Restaurante int UNSIGNED,
 	Id_Cargo tinyint UNSIGNED,
 
@@ -85,14 +85,14 @@ CREATE TABLE Empleado(
 
 
 CREATE TABLE Tipo_producto(
-	Id_tipo_producto int UNSIGNED NOT NULL PRIMARY KEY,
+	Id_tipo_producto int UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
 	Nombre_tipo_producto varchar(80) NOT NULL,
 	Descripcion varchar(200) NOT NULL
 
 );
 
 CREATE TABLE Producto(
-	Id_producto int UNSIGNED NOT NULL PRIMARY KEY,
+	Id_producto int UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
 	Id_Restaurante int UNSIGNED NOT NULL,
 	Id_tipo_producto int UNSIGNED NOT NULL,
 
@@ -121,7 +121,7 @@ CREATE TABLE Producto_Insumo(
 )ENGINE=INNODB;
 
 CREATE TABLE Cliente(
-	Id_cliente int UNSIGNED NOT NULL PRIMARY KEY,
+	Id_cliente int UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
 	Codigo int UNSIGNED UNIQUE,
 	Password varchar(50), 
 	Nombre_cliente varchar(50) NOT NULL,
@@ -134,7 +134,7 @@ CREATE TABLE Cliente(
 );
 
 CREATE TABLE Pedido(
-	Id_pedido int UNSIGNED NOT NULL PRIMARY KEY,
+	Id_pedido int UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
 	Id_cliente int UNSIGNED NOT NULL,
 	Numero_pedido int UNSIGNED NOT NULL,
 	fecha datetime not null,
@@ -153,7 +153,7 @@ CREATE TABLE Producto_Pedido(
 )ENGINE=INNODB;
 
 CREATE TABLE Queja_Reclamos(
-	Id_queja_reclamo int UNSIGNED NOT NULL PRIMARY KEY,
+	Id_queja_reclamo int UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
 	Id_producto int UNSIGNED NOT NULL,
 	Id_pedido int UNSIGNED NOT NULL,
 	Fecha_queja datetime NOT NULL,
@@ -187,7 +187,7 @@ CREATE TABLE Factura(
 )ENGINE=INNODB;
 
 CREATE TABLE Mesa(
-	Id_mesa int UNSIGNED NOT NULL PRIMARY KEY,
+	Id_mesa int UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
 	Cantidad_sillas int UNSIGNED,
 	Numero_mesa int UNSIGNED NOT NULL,
 	Ubicacion varchar(60) NOT NULL,
@@ -195,7 +195,7 @@ CREATE TABLE Mesa(
 );
 
 CREATE TABLE Mesa_Cliente(
-	id_mesa_cliente int UNSIGNED NOT NULL PRIMARY KEY,
+	id_mesa_cliente int UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
 	
 	Id_cliente int UNSIGNED NOT NULL,
 	Id_mesa int UNSIGNED NOT NULL,
