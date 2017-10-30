@@ -32,7 +32,8 @@ CREATE TABLE Insumo(
 	Precio_insumo float UNSIGNED NOT NULL,
 	Nombre_imagen varchar(100),
 	Fecha_caducidad date not null,
-	Descripcion varchar(200) not null
+	Descripcion varchar(200) not null,
+        Tipo_de_cantidad varchar(10)
 );
 
 #Ejemplos procedures que me almacena un procedimiento que puedo llamar despues desde netbeans o donde sea
