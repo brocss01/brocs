@@ -37,60 +37,60 @@ values(7,'avicola colombiana sas',3112423435,  'avicola','Calle norte');
 
 ///// DATOS TABLA INSUMOS///////////////////////////////////////////////////////////////////////////////////////////////
 
-insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo,Nombre_imagen,fecha_caducidad,descripcion)
-values(1,'gaseosa',400,1100,'    ','2017/11/01',' ');
+insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo,Nombre_imagen,fecha_caducidad,descripcion,Tipo_de_cantidad)
+values(1,'gaseosa',400,1100,'    ','2017/11/01',' ','Unid');
 
 
-insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo,Nombre_imagen,fecha_caducidad,descripcion)
-values(2,'arroz', 50, 2900,'    ','2017/11/01',' ');
+insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo,Nombre_imagen,fecha_caducidad,descripcion,Tipo_de_cantidad)
+values(2,'arroz', 50, 2900,'    ','2017/11/01',' ','Gr');
 
-insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo,Nombre_imagen,fecha_caducidad,descripcion)
-values(3,'sal', 50, 1000,'    ','2017/10/01',' ');
-
-
-insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo,Nombre_imagen,fecha_caducidad,descripcion)
-values(4, 'ternera', 100,14300,'    ','2017/01/01',' ');
-
-insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo,Nombre_imagen,fecha_caducidad,descripcion)
-values(5,'cerveza',100,1500,'    ','2017/12/01',' ');
+insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo,Nombre_imagen,fecha_caducidad,descripcion,Tipo_de_cantidad)
+values(3,'sal', 50, 1000,'    ','2017/10/01',' ','Gr');
 
 
-insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo,Nombre_imagen,fecha_caducidad,descripcion)
-values(6, 'huevo',120,300,'    ','2017/03/01',' ');
+insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo,Nombre_imagen,fecha_caducidad,descripcion,Tipo_de_cantidad)
+values(4, 'ternera', 100,14300,'    ','2017/01/01',' ','Gr');
+
+insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo,Nombre_imagen,fecha_caducidad,descripcion,Tipo_de_cantidad)
+values(5,'cerveza',100,1500,'    ','2017/12/01',' ','Unid');
 
 
-insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo,Nombre_imagen,fecha_caducidad,descripcion)
-values(7, 'salchichas', 300,1000,'    ','2019/11/01',' ');
+insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo,Nombre_imagen,fecha_caducidad,descripcion,Tipo_de_cantidad)
+values(6, 'huevo',120,300,'    ','2017/03/01',' ','Unid');
 
 
-insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo,Nombre_imagen,fecha_caducidad,descripcion)
-values(8, 'Pasta', 38,1000,'    ','2020/11/01',' ');
+insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo,Nombre_imagen,fecha_caducidad,descripcion,Tipo_de_cantidad)
+values(7, 'salchichas', 300,1000,'    ','2019/11/01',' ','Unid');
+
+
+insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo,Nombre_imagen,fecha_caducidad,descripcion,Tipo_de_cantidad)
+values(8, 'Pasta', 38,1000,'    ','2020/11/01',' ','Unid');
 --
 
-insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo,Nombre_imagen,fecha_caducidad,descripcion)
-values(9, 'Aceite', 38,1000,'    ','2019/11/30',' ');
+insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo,Nombre_imagen,fecha_caducidad,descripcion,Tipo_de_cantidad)
+values(9, 'Aceite', 38,1000,'    ','2019/11/30',' ','Gr');
 
 
-insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo,Nombre_imagen,fecha_caducidad,descripcion)
-values(10, 'Salsas', 38,1000,'    ','2019/07/24',' ');
+insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo,Nombre_imagen,fecha_caducidad,descripcion,Tipo_de_cantidad)
+values(10, 'Salsas', 38,1000,'    ','2019/07/24',' ','Gr');
 
-insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo,Nombre_imagen,fecha_caducidad,descripcion)
-values(11, 'Picante', 38,1000,'    ','2019/07/01',' ');
+insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo,Nombre_imagen,fecha_caducidad,descripcion,Tipo_de_cantidad)
+values(11, 'Picante', 38,1000,'    ','2019/07/01',' ','Gr');
 
-insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo,Nombre_imagen,fecha_caducidad,descripcion)
-values(12, 'Azucar', 38,1000,'    ','2019/08/01',' ');
+insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo,Nombre_imagen,fecha_caducidad,descripcion,Tipo_de_cantidad)
+values(12, 'Azucar', 38,1000,'    ','2019/08/01',' ','Gr');
 
-insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo,Nombre_imagen,fecha_caducidad,descripcion)
-values(13, 'Mantequilla', 38,1000,'    ','2020/08/01',' ');
+insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo,Nombre_imagen,fecha_caducidad,descripcion,Tipo_de_cantidad)
+values(13, 'Mantequilla', 38,1000,'    ','2020/08/01',' ','Gr');
 
-insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo,Nombre_imagen,fecha_caducidad,descripcion)
-values(14, 'Cebolla', 38,1000,'    ','2017/08/30',' ');
+insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo,Nombre_imagen,fecha_caducidad,descripcion,Tipo_de_cantidad)
+values(14, 'Cebolla', 38,1000,'    ','2017/08/30',' ','Unid');
 
-insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo,Nombre_imagen,fecha_caducidad,descripcion)
-values(15, 'Tomate', 38,1000,'    ','2019/08/01',' ');
+insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo,Nombre_imagen,fecha_caducidad,descripcion,Tipo_de_cantidad)
+values(15, 'Tomate', 38,1000,'    ','2019/08/01',' ','Unid');
 
-insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo,Nombre_imagen,fecha_caducidad,descripcion)
-values(16, 'Leche', 38,1000,'    ','2019/08/01',' ');
+insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo,Nombre_imagen,fecha_caducidad,descripcion,Tipo_de_cantidad)
+values(16, 'Leche', 38,1000,'    ','2019/08/01',' ','ML');
 
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
