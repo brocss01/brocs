@@ -158,12 +158,12 @@ CREATE TABLE Queja_Reclamos(
 	Id_producto int UNSIGNED NOT NULL,
 	Id_pedido int UNSIGNED NOT NULL,
 	Fecha_queja datetime NOT NULL,
-	Estado_queja varchar(20) NOT NULL,
+	Estado_queja varchar(20) NOT NULL DEFAULT 'enviado',
 	Fecha_solucion datetime,
 	Descripcion varchar(200) NOT NULL,
 
-	FOREIGN KEY  (Id_pedido) REFERENCES Producto_Pedido(Id_pedido) ,
-	FOREIGN KEY  (Id_producto) REFERENCES Producto_Pedido(Id_producto) 
+	FOREIGN KEY  (Id_pedido) REFERENCES Producto_Pedido(Id_pedido)  ON DELETE CASCADE ON UPDATE CASCADE,
+	FOREIGN KEY  (Id_producto) REFERENCES Producto_Pedido(Id_producto)  ON DELETE CASCADE ON UPDATE CASCADE
 
 )ENGINE=INNODB;
 
@@ -201,6 +201,7 @@ CREATE TABLE Mesa_Cliente(
 	Id_cliente int UNSIGNED NOT NULL,
 	Id_mesa int UNSIGNED NOT NULL,
 	Fecha_uso datetime,
+	Sillas_Reservadas int not null,
 	FOREIGN KEY (Id_mesa) REFERENCES Mesa(Id_mesa) ON DELETE CASCADE ON UPDATE CASCADE,
 	FOREIGN KEY (Id_cliente) REFERENCES Cliente(Id_cliente) ON DELETE CASCADE ON UPDATE CASCADE
 
