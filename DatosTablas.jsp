@@ -33,33 +33,33 @@ values(7,'avicola colombiana sas',3112423435,  'avicola','Calle norte');
 #TABLA INSUMOS
 
 insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo,Nombre_imagen,fecha_caducidad,descripcion,Tipo_de_cantidad)
-values(1,'gaseosa',400,1100,'    ','2017/11/01',' ','Unid');
+values(1,'gaseosa',400,1100,'Gaseosa.png','2017/11/01',' ','Unid');
 
 
 insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo,Nombre_imagen,fecha_caducidad,descripcion,Tipo_de_cantidad)
-values(2,'arroz', 50, 2900,'    ','2017/11/01',' ','Gr');
+values(2,'arroz', 50, 2900,'Arroz.png','2017/11/01',' ','Gr');
 
 insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo,Nombre_imagen,fecha_caducidad,descripcion,Tipo_de_cantidad)
-values(3,'sal', 50, 1000,'    ','2017/10/01',' ','Gr');
-
-
-insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo,Nombre_imagen,fecha_caducidad,descripcion,Tipo_de_cantidad)
-values(4, 'ternera', 100,14300,'    ','2017/01/01',' ','Gr');
-
-insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo,Nombre_imagen,fecha_caducidad,descripcion,Tipo_de_cantidad)
-values(5,'cerveza',100,1500,'    ','2017/12/01',' ','Unid');
+values(3,'sal', 50, 1000,'sal.png','2017/10/01',' ','Gr');
 
 
 insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo,Nombre_imagen,fecha_caducidad,descripcion,Tipo_de_cantidad)
-values(6, 'huevo',120,300,'    ','2017/03/01',' ','Unid');
+values(4, 'ternera', 100,14300,'Ternera.png','2017/01/01',' ','Gr');
+
+insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo,Nombre_imagen,fecha_caducidad,descripcion,Tipo_de_cantidad)
+values(5,'cerveza',100,1500,'Cerveza.png','2017/12/01',' ','Unid');
 
 
 insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo,Nombre_imagen,fecha_caducidad,descripcion,Tipo_de_cantidad)
-values(7, 'salchichas', 300,1000,'    ','2019/11/01',' ','Unid');
+values(6, 'huevo',120,300,'Huevo.png','2017/03/01',' ','Unid');
 
 
 insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo,Nombre_imagen,fecha_caducidad,descripcion,Tipo_de_cantidad)
-values(8, 'Pasta', 38,1000,'    ','2020/11/01',' ','Unid');
+values(7, 'salchichas', 300,1000,'Salchicha.png','2019/11/01',' ','Unid');
+
+
+insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo,Nombre_imagen,fecha_caducidad,descripcion,Tipo_de_cantidad)
+values(8, 'Pasta', 38,1000,'Pasta.png','2020/11/01',' ','Unid');
 
 
 insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo,Nombre_imagen,fecha_caducidad,descripcion,Tipo_de_cantidad)
@@ -67,10 +67,10 @@ values(9, 'Aceite', 38,1000,'    ','2019/11/30',' ','Gr');
 
 
 insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo,Nombre_imagen,fecha_caducidad,descripcion,Tipo_de_cantidad)
-values(10, 'Salsas', 38,1000,'    ','2019/07/24',' ','Gr');
+values(10, 'Salsas', 38,1000,'Salsa.png','2019/07/24',' ','Gr');
 
 insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo,Nombre_imagen,fecha_caducidad,descripcion,Tipo_de_cantidad)
-values(11, 'Picante', 38,1000,'    ','2019/07/01',' ','Gr');
+values(11, 'Picante', 38,1000,'Picante.png','2019/07/01',' ','Gr');
 
 insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo,Nombre_imagen,fecha_caducidad,descripcion,Tipo_de_cantidad)
 values(12, 'Azucar', 38,1000,'    ','2019/08/01',' ','Gr');
