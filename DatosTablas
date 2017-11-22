@@ -1,16 +1,13 @@
-///////DATO TABLA RESTAURANTE////////////////////////////////////////////////////////////////////////////////////////////
+# TABLA RESTAURANTE
 INSERT INTO Restaurante (Id_Restaurante, Nombre_Restaurante,Direccion,Telefono)
 	VALUES (1,"Restaurante-Bar BROCS","Carrera 14d bis 7-64",3183367880);
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-//////DATOS TABLA METODO_PAGO////////////////////////////////////////////////////////////////////////////////////////////
+
 INSERT INTO Metodo_pago (Id_metodo_pago, Nombre_metodo) VALUES (1,"Efectivo");
 INSERT INTO Metodo_pago (Id_metodo_pago, Nombre_metodo) VALUES (2,"Tarjeta de crédito");
 INSERT INTO Metodo_pago (Id_metodo_pago, Nombre_metodo) VALUES (3,"Tarjeta de débito");
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-
-/////////////TABLA PROVEEDOR//////////////////////////////////////////////////////////////////////////////////////
+#TABLA PROVEEDOR
 
 insert into proveedor(id_proveedor,Nombre_proveedor, telefono, descripcion,direccion)
 values(1,'Postobon',3165748390,'fabricante y distribuidora de bebidas gaseosas','Cll 53');
@@ -32,10 +29,8 @@ values(6,'Bavaria',3123453434, ' cerveceria','Calle sur');
 
 insert into proveedor(id_proveedor,Nombre_proveedor, telefono, descripcion,direccion)
 values(7,'avicola colombiana sas',3112423435,  'avicola','Calle norte');
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-
-///// DATOS TABLA INSUMOS///////////////////////////////////////////////////////////////////////////////////////////////
+#TABLA INSUMOS
 
 insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo,Nombre_imagen,fecha_caducidad,descripcion,Tipo_de_cantidad)
 values(1,'gaseosa',400,1100,'    ','2017/11/01',' ','Unid');
@@ -65,7 +60,7 @@ values(7, 'salchichas', 300,1000,'    ','2019/11/01',' ','Unid');
 
 insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo,Nombre_imagen,fecha_caducidad,descripcion,Tipo_de_cantidad)
 values(8, 'Pasta', 38,1000,'    ','2020/11/01',' ','Unid');
---
+
 
 insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo,Nombre_imagen,fecha_caducidad,descripcion,Tipo_de_cantidad)
 values(9, 'Aceite', 38,1000,'    ','2019/11/30',' ','Gr');
@@ -93,11 +88,10 @@ insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo,Nombre_
 values(16, 'Leche', 38,1000,'    ','2019/08/01',' ','ML');
 
 
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 
-//////////////////TABLA INSUMO_PROVEEDOR/////////////////////////////////////////////////////////////////////////////
+#TABLA INSUMO_PROVEEDOR
 
 insert into Insumo_Proveedor(Id_insumo,Id_proveedor,cantidad,fechaentrega)
 values(1,1,2,'2017/08/01');
@@ -123,10 +117,11 @@ values(6,7,1,'2017/08/01');
 insert into Insumo_Proveedor(Id_insumo,Id_proveedor,cantidad,fechaentrega)
 values(7,5,3,'2017/08/01');
 
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-/////DATOS TABLA Tipo_producto////////////////////////////////////////////////////////////////////////////////////////////
+
+#DATOS TABLA Tipo_producto
+
 insert into Tipo_producto(Id_tipo_producto ,Nombre_tipo_producto ,Descripcion )
 	values(1,'Bebidas','Cualquir tipo de bebidas exeptuando licores');
 
@@ -141,10 +136,11 @@ insert into Tipo_producto(Id_tipo_producto ,Nombre_tipo_producto ,Descripcion )
 
 insert into Tipo_producto(Id_tipo_producto ,Nombre_tipo_producto ,Descripcion )
 	values(5,'Licores','Toda bebida que posea algun grado de alcohol');
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-///// DATOS TABLA PRODUCTO///////////////////////////////////////////////////////////////////////////////////////////////
+# DATOS TABLA PRODUCTO
+
+
 insert into Producto(Id_producto ,Id_Restaurante ,Id_tipo_producto ,Nombre_producto,
 Precio ,Descripcion ,Unidades_stock ,Unidades_Vendidas ,Fecha_Caducidad,Nombre_imagen )
 values(01,1,2,'Arroz con pollo',12000,'arroz,alverjas,pollo,salchicha',10,0,'2017/11/01','Arroz con pollo.png');
@@ -173,11 +169,9 @@ values(06,1,3,'Helado',2500,'Postre frio',10,2,'2017/10/27','Helado.png');
 insert into Producto(Id_producto ,Id_Restaurante ,Id_tipo_producto ,Nombre_producto,
 Precio ,Descripcion ,Unidades_stock ,Unidades_Vendidas ,Fecha_Caducidad,Nombre_imagen )
 values(07,1,4,'Hot Dog',5500,'Comida Rapida',17,1,'2017/10/17','Hot Dog.png');
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+#DATOS TABLA PRODUCTO_INSUMO
 
-
-//////DATOS TABLA PRODUCTO_INSUMO//////////////////////////////////////////////////////////////////////////////////////////////////////
 insert into Producto_Insumo(Id_Producto,Id_insumo,Cantidad,Fecha_Gasto)
 values(3,1,12,'2017/01/01');
 
@@ -189,9 +183,9 @@ values(2,7,22,'2017/04/01');
 
 insert into Producto_Insumo(Id_Producto,Id_insumo,Cantidad,Fecha_Gasto)
 values(2,6,21,'2017/04/01');
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-/////////DATOS TABLA CLIENTE///////////////////////////////////////////////////////////////////////////////////////////
+#DATOS TABLA CLIENTE
+
 insert into cliente(Id_cliente,Codigo,Password,Nombre_cliente,Apellidos_cliente,
 	Fecha_Nacimiento,Telefono,Genero,Direccion) values(990618006,1,'aaaa',
 	'Sebastian','Garzon','1999/06/18',3142337375,'M','Diagonal 14#20-12');
@@ -256,14 +250,9 @@ insert into cliente(Id_cliente,Codigo,Password,Nombre_cliente,Apellidos_cliente,
 	Fecha_Nacimiento,Telefono,Genero,Direccion) values(11,16,'aaaav','Samanta',
 	'Noise','2002/03/13',3015674523,'F','Calle 8 12-89');	
 
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+#DATOS TABLA PEDIDO
 
-
-
-
-
-/////DATOS TABLA PEDIDO////////////////////////////////////////////////////////////////////////////////////////////
 insert into Pedido(Id_pedido,Id_cliente,Numero_pedido,fecha,Descripcion)
 	values(001,1075688998,01,'2019-9-16 13:20:30','Compra de Bebidas');
 
@@ -282,9 +271,8 @@ insert into Pedido(Id_pedido,Id_cliente,Numero_pedido,fecha,Descripcion)
 insert into Pedido(Id_pedido,Id_cliente,Numero_pedido,fecha,Descripcion)
 	values(006,112657542,06,'2018-9-16 15:20:30',' ');
 
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+# DATOS TABLA Producto_Pedido
 
-///// DATOS TABLA Producto_Pedido///////////////////////////////////////////////////////////////////////////////////////////////
 insert into Producto_Pedido(Id_pedido,Id_producto,cantidad) values(01,01,1);
 
 insert into Producto_Pedido(Id_pedido,Id_producto,cantidad) values(01,03,4);
@@ -316,22 +304,19 @@ insert into Producto_Pedido(Id_pedido,Id_producto,cantidad) values(05,03,10);
 insert into Producto_Pedido(Id_pedido,Id_producto,cantidad) values(06,02,2);
 
 insert into Producto_Pedido(Id_pedido,Id_producto,cantidad) values(06,03,6);
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
- PD: Solo puse los que necesitaba, no todos los que debería haber
-///////DATOS TABLA QUEJA_RECLAMOS///////////////////////////////////////////////////////////////////////////////////////
+#DATOS TABLA QUEJA_RECLAMOS
+
 INSERT INTO Queja_Reclamos(Id_queja_reclamo,Id_producto,Id_pedido,Fecha_queja,Estado_queja,Fecha_solucion,Descripcion)
 	VALUES(1,7,2,'2017/03/13','Cerrado','2017/03/20','La salchica estaba rancia');
 INSERT INTO Queja_Reclamos(Id_queja_reclamo,Id_producto,Id_pedido,Fecha_queja,Estado_queja,Fecha_solucion,Descripcion)
 	VALUES(2,2,4,'2017/03/13','Cerrado','2017/03/20','El huevo estaba podrido');
 INSERT INTO Queja_Reclamos(Id_queja_reclamo,Id_producto,Id_pedido,Fecha_queja,Estado_queja,Fecha_solucion,Descripcion)
 	VALUES(3,7,4,'2017/03/13','Cerrado','2017/03/20','El perro tenia un pelo');
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+#TABLA FACTURA
 
-
-//////////////////TABLA FACTURA/////////////////////////////////////////////////////////////////////////////
 insert into Factura(Id_factura,Id_cliente,Id_pedido,Id_metodo_pago,Descripcion,Numero_factura,Precio_total)
 values(1,1,1,2,'Bebidas',12,66000);
 
@@ -369,10 +354,9 @@ values(12321231,10,5,1,' ',20,69000);
 insert into Factura(Id_factura,Id_cliente,Id_pedido,Id_metodo_pago,Descripcion,Numero_factura,Precio_total)
 values(11231,11,4,1,' ',20,666);
 
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+#DATOS MESA
 
-//////DATOS MESA////////////////////////////////////////////////////////////////////////////////////////////////////////
 INSERT INTO Mesa(Id_mesa,Numero_mesa,Ubicacion,Descripcion,Cantidad_sillas) VALUES(1,'1','Oeste','Azul con un salero',3);
 INSERT INTO Mesa(Id_mesa,Numero_mesa,Ubicacion,Descripcion,Cantidad_sillas) VALUES(2,'2','Noroeste','Roja con salsa de tomate',4);
 INSERT INTO Mesa(Id_mesa,Numero_mesa,Ubicacion,Descripcion,Cantidad_sillas) VALUES(3,'3','Sereste','Amarilla con servilletas y palillos',2);
@@ -380,40 +364,39 @@ INSERT INTO Mesa(Id_mesa,Numero_mesa,Ubicacion,Descripcion,Cantidad_sillas) VALU
 INSERT INTO Mesa(Id_mesa,Numero_mesa,Ubicacion,Descripcion,Cantidad_sillas) VALUES(5,'5','Al lado la ventana','Blanca con vista a la ventana y un salero',1);
 
 
-/////DATOS TABLA Mesa_Cliente////////////////////////////////////////////////////////////////////////////////////////////
-INSERT INTO Mesa_Cliente(Id_mesa_cliente,Id_cliente,Id_mesa, fecha_uso) VALUES(1,1075688998,3,'2017-9-13 11:10:02');
-INSERT INTO Mesa_Cliente(Id_mesa_cliente,Id_cliente,Id_mesa, fecha_uso)VALUES(2,1075688998,2,'2017-9-14 12:50:09');
-INSERT INTO Mesa_Cliente(Id_mesa_cliente,Id_cliente,Id_mesa, fecha_uso) VALUES(3,990618006,1,'2017-9-16 15:20:30');
-INSERT INTO Mesa_Cliente(Id_mesa_cliente,Id_cliente,Id_mesa, fecha_uso) VALUES(4,990618006,5,'2017-9-20 9:30:12');
-INSERT INTO Mesa_Cliente(Id_mesa_cliente,Id_cliente,Id_mesa, fecha_uso) VALUES(5,990618006,1, '2017-9-22 17:25:26');
-INSERT INTO Mesa_Cliente(Id_mesa_cliente,Id_cliente,Id_mesa, fecha_uso) VALUES(6,1789654342,4, '2017-9-24 17:55:56');
-INSERT INTO Mesa_Cliente(Id_mesa_cliente,Id_cliente,Id_mesa, fecha_uso) VALUES(7,112657542,2, '2017-9-30 10:40:12');
-INSERT INTO Mesa_Cliente(Id_mesa_cliente,Id_cliente,Id_mesa, fecha_uso) VALUES(8,112657542,5, '2017-9-30 16:40:32');
+#DATOS TABLA Mesa_Cliente
 
-INSERT INTO Mesa_Cliente(Id_mesa_cliente,Id_cliente,Id_mesa, fecha_uso) VALUES(9,654645,5,'2017-9-16 15:20:30');
-INSERT INTO Mesa_Cliente(Id_mesa_cliente,Id_cliente,Id_mesa, fecha_uso) VALUES(10,4,5,'2017-9-16 17:20:30');
-INSERT INTO Mesa_Cliente(Id_mesa_cliente,Id_cliente,Id_mesa, fecha_uso) VALUES(11,4,654645,'2019-9-16 15:20:30');
-INSERT INTO Mesa_Cliente(Id_mesa_cliente,Id_cliente,Id_mesa, fecha_uso) VALUES(12,112657542,1,'2019-9-16 15:20:30');
-INSERT INTO Mesa_Cliente(Id_mesa_cliente,Id_cliente),Id_mesa, fecha_uso VALUES(13,34234,1,'2009-9-16 15:20:30');
-INSERT INTO Mesa_Cliente(Id_mesa_cliente,Id_cliente,Id_mesa, fecha_uso) VALUES(14,3,1,'2019-9-16 15:20:30');
+desc mesa_cliente;
+INSERT INTO Mesa_Cliente(Id_mesa_cliente,Id_cliente,Id_mesa, fecha_uso, sillas_reservadas) VALUES(1,1075688998,3,'2017-9-13 11:10:02',2);
+INSERT INTO Mesa_Cliente(Id_mesa_cliente,Id_cliente,Id_mesa, fecha_uso,sillas_reservadas)VALUES(2,1075688998,2,'2017-9-14 12:50:09',3);
+INSERT INTO Mesa_Cliente(Id_mesa_cliente,Id_cliente,Id_mesa, fecha_uso,sillas_reservadas)VALUES(3,990618006,1,'2017-9-16 15:20:30',2);
+INSERT INTO Mesa_Cliente(Id_mesa_cliente,Id_cliente,Id_mesa, fecha_uso,sillas_reservadas) VALUES(4,990618006,5,'2017-9-20 9:30:12',1);
+INSERT INTO Mesa_Cliente(Id_mesa_cliente,Id_cliente,Id_mesa, fecha_uso,sillas_reservadas) VALUES(5,990618006,1, '2017-9-22 17:25:26',3);
+INSERT INTO Mesa_Cliente(Id_mesa_cliente,Id_cliente,Id_mesa, fecha_uso,sillas_reservadas) VALUES(6,1789654342,4, '2017-9-24 17:55:56',2);
+INSERT INTO Mesa_Cliente(Id_mesa_cliente,Id_cliente,Id_mesa, fecha_uso,sillas_reservadas) VALUES(7,112657542,2, '2017-9-30 10:40:12',4);
+INSERT INTO Mesa_Cliente(Id_mesa_cliente,Id_cliente,Id_mesa, fecha_uso,sillas_reservadas) VALUES(8,112657542,5, '2017-9-30 16:40:32',1);
 
-INSERT INTO Mesa_Cliente(Id_mesa_cliente,Id_cliente,Id_mesa, fecha_uso) VALUES(15,9,5,'2019-9-16 15:20:30');
-INSERT INTO Mesa_Cliente(Id_mesa_cliente,Id_cliente,Id_mesa, fecha_uso) VALUES(16,10,5,'2019-9-16 15:20:30');
-INSERT INTO Mesa_Cliente(Id_mesa_cliente,Id_cliente,Id_mesa, fecha_uso) VALUES(17,11,4,'2019-9-16 11:20:30');
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+INSERT INTO Mesa_Cliente(Id_mesa_cliente,Id_cliente,Id_mesa, fecha_uso,sillas_reservadas) VALUES(9,654645,5,'2017-9-16 15:20:30',1);
+INSERT INTO Mesa_Cliente(Id_mesa_cliente,Id_cliente,Id_mesa, fecha_uso,sillas_reservadas) VALUES(10,4,5,'2017-9-16 17:20:30',1);
+INSERT INTO Mesa_Cliente(Id_mesa_cliente,Id_cliente,Id_mesa, fecha_uso,sillas_reservadas) VALUES(11,4,654645,'2019-9-16 15:20:30',2);
+INSERT INTO Mesa_Cliente(Id_mesa_cliente,Id_cliente,Id_mesa, fecha_uso,sillas_reservadas) VALUES(12,112657542,1,'2019-9-16 15:20:30',3);
+INSERT INTO Mesa_Cliente(Id_mesa_cliente,Id_cliente,Id_mesa, fecha_uso,sillas_reservadas) VALUES(13,34234,1,'2009-9-16 15:20:30',2);
+INSERT INTO Mesa_Cliente(Id_mesa_cliente,Id_cliente,Id_mesa, fecha_uso,sillas_reservadas) VALUES(14,3,1,'2019-9-16 15:20:30',2);
 
+INSERT INTO Mesa_Cliente(Id_mesa_cliente,Id_cliente,Id_mesa, fecha_uso,sillas_reservadas) VALUES(15,9,5,'2019-9-16 15:20:30',1);
+INSERT INTO Mesa_Cliente(Id_mesa_cliente,Id_cliente,Id_mesa, fecha_uso,sillas_reservadas) VALUES(16,10,5,'2019-9-16 15:20:30',1);
+INSERT INTO Mesa_Cliente(Id_mesa_cliente,Id_cliente,Id_mesa, fecha_uso,sillas_reservadas) VALUES(17,11,4,'2019-9-16 11:20:30',2);
 
-/////////DATOS TABLA CARGO///////////////////////////////////////////////////////////////////////////////////////////
+#DATOS TABLA CARGO
+
 insert into Cargo(Id_Cargo,Nombre_Cargo,Descripcion)
 	values(1,'Administracion','Encargado de administra empleado e insumos');
 insert into Cargo(Id_Cargo,Nombre_Cargo,Descripcion)
 	values(2,'Chef','utiliza los insumos en Productos');
 insert into Cargo(Id_Cargo,Nombre_Cargo,Descripcion)
 	values(3,'Mesero','Encargado factura y mesa');
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-
-//////////////////////////////DATOS EMPLEADOS/////////////////////////////////////////////////////////////////////
+#DATOS EMPLEADOS
 
 insert into empleado (id_empleado,id_restaurante,id_cargo,nombre_empleado,apellido,fecha_nacimiento,direccion, telefono,Email,salario,Documento,genero,Codigo,password)
 values (1,1,1,'Mauricio','Gomez','1972-10-08','kra 189 # 83-71','3184978164','maogom@gmail.com','6000000','1080798134','M',1,'aae');
@@ -444,13 +427,3 @@ values (9,1,3,'Monica','Galindo','1992-05-16','kra 151 #86-67','3146489705','mon
 
 insert into empleado (id_empleado,id_restaurante,id_cargo,nombre_empleado,apellido,fecha_nacimiento,direccion, telefono,Email,salario,Documento,genero,Codigo,password)
 values (10,1,3,'Alejandra','Ramirez','1993-03-28','kra 151 #186-91','3139875208','Aleramirez@gmail.com','1800000','104069767','F',10,'aae');
-
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-
-
-
-
-
-
-
