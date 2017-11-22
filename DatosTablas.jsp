@@ -97,7 +97,7 @@ insert into Insumo_Proveedor(Id_insumo,Id_proveedor,cantidad,fechaentrega)
 values(1,1,2,'2017/08/01');
 
 insert into Insumo_Proveedor(Id_insumo,Id_proveedor,cantidad,fechaentrega)
-values(1,2,3,'2017/08/01');
+values(8,2,3,'2017/08/01');
 
 insert into Insumo_Proveedor(Id_insumo,Id_proveedor,cantidad,fechaentrega)
 values(2,3,1,'2017/08/01');
