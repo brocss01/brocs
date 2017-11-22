@@ -90,7 +90,7 @@ insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo,Nombre_
 values(15, 'Tomate', 38,1000,'    ','2019/08/01',' ');
 
 insert into insumo(Id_insumo,Nombre_insumo,unidades_stock, Precio_insumo,Nombre_imagen,fecha_caducidad,descripcion)
-values(16, 'Leche', 38,1000,    ,'2019/08/01',' ');
+values(16, 'Leche', 38,1000,'    ','2019/08/01',' ');
 
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
