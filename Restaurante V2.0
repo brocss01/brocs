@@ -54,35 +54,35 @@ CREATE TABLE Insumo_Proveedor(
 ) ENGINE=INNODB;
 
 CREATE TABLE Cargo(
-	Id_Cargo tinyint UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	Id_Cargo int UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
 	Nombre_Cargo varchar(20)  NOT NULL,
 	Descripcion varchar(200) NOT NULL
 
 );
 
 
+
 CREATE TABLE Empleado(
-	Id_Empleado int UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
-	Id_Restaurante int UNSIGNED,
-	Id_Cargo int UNSIGNED,
+Id_Empleado int UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+Id_Restaurante int UNSIGNED,
+Id_Cargo int UNSIGNED,
+Nombre_Empleado varchar(50) NOT NULL,
+Apellido varchar(50) NOT NULL,
+Fecha_Nacimiento varchar(50) NOT NULL,
+Direccion varchar(100) NOT NULL,
+Telefono varchar(15) NOT NULL,
+Email varchar(100) NOT NULL,
+Salario varchar(100) NOT NULL,
+Documento varchar(50) NOT NULL,
+Genero char NOT NULL,
+Codigo int NOT NULL,
+Password varchar(50) NOT NULL,
+Nombre_Imagen varchar(100),
+FOREIGN KEY (Id_Cargo) REFERENCES Cargo(Id_Cargo) ON DELETE SET NULL ON UPDATE CASCADE,
+FOREIGN KEY (Id_Restaurante) REFERENCES Restaurante(Id_Restaurante) ON DELETE CASCADE ON UPDATE CASCADE
 
-	Nombre_Empleado varchar(100) NOT NULL,
-	Apellido varchar(100) NOT NULL,
-	Fecha_Nacimiento varchar(100) NOT NULL,
-	Direccion varchar(100) NOT NULL,
-	Telefono varchar(100) NOT NULL,
-	Email varchar(100) NOT NULL,
-	Salario varchar(100) NOT NULL,
-	Documento varchar(100) NOT NULL,
-	Genero char NOT NULL,
-	Codigo varchar(100) NOT NULL,
-	Password varchar(100) NOT NULL,
-	Nombre_Imagen varchar(100),
-	FOREIGN KEY (Id_Cargo) REFERENCES Cargo(Id_Cargo) ON DELETE SET NULL ON UPDATE CASCADE,
-	FOREIGN KEY (Id_Restaurante) REFERENCES Restaurante(Id_Restaurante) ON DELETE CASCADE ON UPDATE CASCADE
-	
+	);
 
-);
 
 
 CREATE TABLE Tipo_producto(
