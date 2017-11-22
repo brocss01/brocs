@@ -386,6 +386,8 @@ INSERT INTO Mesa_Cliente(Id_mesa_cliente,Id_cliente,Id_mesa, fecha_uso,sillas_re
 INSERT INTO Mesa_Cliente(Id_mesa_cliente,Id_cliente,Id_mesa, fecha_uso,sillas_reservadas) VALUES(15,9,5,'2019-9-16 15:20:30',1);
 INSERT INTO Mesa_Cliente(Id_mesa_cliente,Id_cliente,Id_mesa, fecha_uso,sillas_reservadas) VALUES(16,2,5,'2019-9-16 15:20:30',1);
 INSERT INTO Mesa_Cliente(Id_mesa_cliente,Id_cliente,Id_mesa, fecha_uso,sillas_reservadas) VALUES(17,3,4,'2019-9-16 11:20:30',2);
+INSERT INTO Mesa_Cliente(Id_mesa_cliente,Id_cliente,Id_mesa, fecha_uso,sillas_reservadas) VALUES(18,1,4,'2017-11-28 11:20:30',2);
+
 
 select * from Mesa_cliente;
 #DATOS TABLA CARGO
